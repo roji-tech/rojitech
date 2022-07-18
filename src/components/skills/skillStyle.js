@@ -62,9 +62,9 @@ export default SkillStyle;
 export const SkillBoxStyle = styled.div`
   width: 120px;
   height: 120px;
-  background-color: var(--bg-white);
+  background-color: var(--lg-white);
   border-radius: 30px;
-  padding: 20px;
+  padding: 30px;
   display: flex;
   flex-direction: column;
   gap: 5px;
