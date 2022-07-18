@@ -11,18 +11,19 @@ const UnderStroke = ({color, dark }) => {
     justifyContent: "center",
     alignItems: "center",
     position: "relative",
+    backgroundColor: "var(--blue)"
   };
 
   let underSpan = {
     display: "inline-block",
     width: "3em",
     height: "100%",
-    backgroundColor: "var(--bg-white)",
+    backgroundColor: "var(--blue)",
     borderRadius: "50%",
     position: "absolute",
     transform: "scaleY(300%)",
     boxSizing: "border-box",
-    border: `1.5px solid  var(--bg-dark)`,
+    border: `1.5px solid  var(--bg-white)`,
   };
 
   return (
