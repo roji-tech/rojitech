@@ -23,7 +23,7 @@ const UnderStroke = ({color, dark }) => {
     position: "absolute",
     transform: "scaleY(300%)",
     boxSizing: "border-box",
-    border: `1.5px solid  var(--bg-white)`,
+    border: `2px solid  var(--bg-white)`,
   };
 
   return (

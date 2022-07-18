@@ -1,5 +1,5 @@
 import BannerStyle from "./bannerStyle";
-import one from "../IMGS/1.jpeg";
+import one from "../../IMGS/1.jpeg";
 import {
   FaTwitter,
   FaLinkedinIn,
