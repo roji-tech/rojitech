@@ -8,12 +8,13 @@ const SkillStyle = styled.section`
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
-  background-color: yellow;
+  background-color: greenyellow;
 
   @media screen and (max-width: 800px) {
     div.about__text {
       margin: 5% 0;
       width: 80%;
+      
     }
   }
 `;

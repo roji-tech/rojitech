@@ -1,9 +1,6 @@
 import styled, { createGlobalStyle } from "styled-components";
 
 const GlobalStyle = createGlobalStyle`
-  @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;900&display=swap");
-  @import url("https://fonts.googleapis.com/css2?family=Satisfy&display=swap");
-
   :root {
   --bg-white: #fff;
   --bg-light:	 #D3DCF8;
@@ -24,17 +21,24 @@ const GlobalStyle = createGlobalStyle`
   border: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: 'Abel', sans-serif;
-  }
+  font-family: 'Poppins', sans-serif;
+}
 
   body {
     background-color: var(--bg-white);
     width: 99.95%;
 
-
+    
     margin: 0;
     padding: 0;
     /* color: var(--bg-light); */
+  }
+  p{
+  }
+  
+  .satisfy{
+    /* font-family: 'Lato', sans-serif; */
+    font-family: "Satisfy", cursive;
   }
 `;
 
