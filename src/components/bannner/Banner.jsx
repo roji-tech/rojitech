@@ -11,7 +11,7 @@ import Button from "../button/Button";
 const Banner = () => {
   return (
     <BannerStyle>
-      <h1 className="rojitech">ROJITECH</h1>
+      <p className="rojitech">ROJITECH</p>
       <div>
         <p className="hi">
           <em>Hi there </em>

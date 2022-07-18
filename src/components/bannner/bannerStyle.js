@@ -8,7 +8,15 @@ const BannerStyle = styled.section`
   color: black;
 
   .rojitech {
-    position: static;
+    position: absolute;
+    font-size: 2em;
+    top: 10px;
+    left: 10px;
+    font-family: Poppins;
+    
+    @media screen and (max-width: 800px) {
+      font-size: 1.2em;
+    }
   }
   div {
     padding-left: 15%;
