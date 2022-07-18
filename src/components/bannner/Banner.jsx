@@ -20,16 +20,12 @@ const Banner = () => {
         <p className="stack">A Full Stack Developer</p>
 
         <div className="socials">
-          <FaTwitter color="blue" size={25} />
-          <FaLinkedinIn color="blue" size={25} />
-          <FaWhatsapp color="blue" size={25} />
-          <FaTelegramPlane color="blue" size={25} />
+          <FaTwitter color="var(--var(--blue))" className="social" size={25} />
+          <FaLinkedinIn color="var(--blue)" size={25} className="social" />
+          <FaWhatsapp color="var(--blue)" size={25} className="social" />
+          <FaTelegramPlane color="var(--blue)" size={25} className="social" />
         </div>
-        <Button
-          text="Download Resume"
-          color={"blue"}
-          bgColor={"var(--bg-lighter)"}
-        />
+        <Button text="Download Resume" />
       </div>
       <div className="banner__img">
         <img src={one} alt="PYTHON JAVASCRIPT" />

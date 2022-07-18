@@ -60,7 +60,7 @@ export const HeaderTexts = styled.div`
   .p3 {
     font-size: var(--fontSmall);
     font-family: "cursive", "Courier New", Courier, monospace;
-    color: var(--bg-light)
+    color: var(--bg-light);
   }
 
   .job {
@@ -96,7 +96,7 @@ export const HeaderImgWrap = styled.div`
 
   img {
     width: 90%;
-    background-color: blue;
+    background-color: var(--blue);
     border-top-right-radius: 40%;
     border-top-left-radius: 50%;
     height: 90%;
@@ -121,4 +121,3 @@ export const HeaderImgWrap = styled.div`
     transform: translateY(-7%);
   }
 `;
-
