@@ -40,6 +40,10 @@ const BannerStyle = styled.section`
       font-size: 2em;
       font-weight: bolder;
       text-shadow: 3px 3px #07073084;
+
+      @media screen and (max-width: 800px) {
+        font-size: 1.4em;
+      }
     }
 
     .socials {
