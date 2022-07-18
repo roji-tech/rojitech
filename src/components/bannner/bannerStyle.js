@@ -29,6 +29,7 @@ const BannerStyle = styled.section`
       font-family: satisfy;
       font-size: 1.1em;
       color: var(--blue);
+      letter-spacing: 4px;
     }
 
     .name {
@@ -67,7 +68,7 @@ const BannerStyle = styled.section`
       .hi {
         font-family: satisfy;
         font-size: 1.1em;
-        color: var(--blue);
+        color: var(--bg-white);
       }
 
       .stack {

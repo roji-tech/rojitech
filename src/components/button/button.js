@@ -12,7 +12,7 @@ export const ButtonStyle = styled.button`
   outline: none;
   border-radius: 6px;
   box-shadow: -6px 6px 0 1px #0000ff;
-  color: var(--bg-blue);
+  /* color: var(--blue); */
   background-color: var(--bg-light);
 
   @media screen and (max-width: 800px) {

@@ -11,10 +11,10 @@ import Button from "../button/Button";
 const Banner = () => {
   return (
     <BannerStyle>
-      <p className="satisfy rojitech">ROJITECH</p>
+      <p className="satisfy custom-3D-title rojitech">ROJITECH</p>
       <div>
         <p className="hi">
-          <em>Hi there </em>
+          <em>Hi There </em>
         </p>
         <p className="name"> I am ABDULLAH JAMIU</p>
         <p className="stack">A Full Stack Developer</p>
