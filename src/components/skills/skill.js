@@ -11,12 +11,16 @@ const SkillStyle = styled.section`
   background-color: greenyellow;
 
   @media screen and (max-width: 800px) {
+    align-items: center;
+    padding: 0;
+
     div.about__text {
       margin: 5% 0;
       width: 80%;
-      
     }
   }
 `;
 
 export default SkillStyle;
+
+export const SkillBox = styled.div``;

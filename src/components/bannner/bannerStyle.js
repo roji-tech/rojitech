@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-const BannerStyle = styled.section`
+const BannerStyle = styled.main`
   display: grid;
   height: 90vh;
   width: 100%;
