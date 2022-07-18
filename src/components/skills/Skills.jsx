@@ -10,9 +10,9 @@ const Skills = () => {
         <h1>My Skills</h1>
         <UnderStroke />
       </Heading>
-      <div>
+      <div className="skills">
         <div>
-          <small>Advance</small>
+          <small className="small">Advance</small>
           <div>Python</div>
           <div>Django</div>
           <div>Javascript</div>
@@ -22,11 +22,11 @@ const Skills = () => {
           <div>Git and GitHub</div>
         </div>
         <div>
-          <small>Intermediate</small>
+          <small className="small">Intermediate</small>
           <div>PHP</div>
         </div>
         <div>
-          <small>Basic</small>
+          <small className="small">Basic</small>
           <div>C++</div>
           <div>WordPress</div>
           <div>WordPress</div>
