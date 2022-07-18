@@ -1,0 +1,22 @@
+.social-links {
+  display: flex;
+  width: 100%;
+}
+
+.social {
+  padding: 5px;
+  margin: 5px;
+  text-decoration: none;
+  cursor: pointer;
+  color: lightgreen;
+  /* color: var(--btn-color-2); */
+  transition: all .3s ease-in-out ;
+}
+
+.social-links a:visited a:focus{
+   text-decoration: none;
+}
+
+.social:hover{
+   transform: scale(1.5);
+}
