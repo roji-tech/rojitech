@@ -46,7 +46,7 @@ const Skills = () => {
         </div>
         <div className="boxes">
           <p className="small">Basic</p>
-          <div className="box">
+          <div className="box last">
             <SkillBox text={"C++"} imgSrc={cplus} />
             <SkillBox text={"WordPress"} imgSrc={wp} />
             <SkillBox text={"Java"} imgSrc={java} />

@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 const SkillStyle = styled.section`
-  padding: 10% 0;
+  padding: 15% 0;
   padding-left: 10%;
   background-color: var(--bg-light);
   display: grid;
@@ -41,14 +41,17 @@ const SkillStyle = styled.section`
       justify-content: center;
       gap: 40px;
       padding-bottom: 50px;
+    }
+
+    .box:not(.last) {
       border-bottom: 1px solid var(--blue);
     }
+
     /* background-color: red; */
   }
 
   @media screen and (max-width: 800px) {
     align-items: center;
-    padding: 0;
 
     div.about__text {
       margin: 5% 0;

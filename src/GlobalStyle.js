@@ -71,6 +71,7 @@ export const Heading = styled.div`
   justify-content: "center";
   align-items: center;
   gap: 5px;
+  margin-bottom: 30px;
 `;
 
 export const Heading2 = styled.div`
