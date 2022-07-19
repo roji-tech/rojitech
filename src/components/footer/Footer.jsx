@@ -6,7 +6,7 @@ import { FooterWrapper } from "./footerStyle";
 const Footer = () => {
   return (
     <FooterWrapper>
-      <p>ABDULLAH JAMIU</p>
+      <p className="name">ABDULLAH JAMIU</p>
       <Social j_content="center" />
       <Button fontSize="larger" text={"Get Resume"} />
       <p>Thank You</p>

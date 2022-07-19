@@ -5,21 +5,11 @@ export const ContactWrap = styled.section`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 90%;
   align-self: center;
   justify-self: center;
   border-radius: 10px;
   background-color: var(--bg-dark);
-  box-shadow: 0 0 5px 0.5px;
-
-  .contact-stroke {
-    margin: 6px;
-  }
-  .p1 {
-    margin: 5px;
-    font-size: larger;
-    color: var(--bg-white);
-  }
+  box-shadow: 0 0 5px 0.5px var(--trans);
 `;
 
 export const ContactHead = styled.h3``;

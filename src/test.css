@@ -1,5 +1,7 @@
 .root {
   --bg-lighter: #ffffff42;
+  --bg-light: #3AB4F2;
   --bg-light: #5482ff;
-  color: #07073084;
+  --bg-light: #00000020;
+  color: #005d9b;
 }

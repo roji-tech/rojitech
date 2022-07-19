@@ -1,8 +1,9 @@
 import Banner from "./components/bannner/Banner";
 import About from "./components/about/About";
 import Skills from "./components/skills/Skills";
-import Footer from "./components/footer/Footer"
-
+import Projects from "./components/projects/Projects";
+import Contact from "./components/contact/Contact";
+import Footer from "./components/footer/Footer";
 
 function App() {
   return (
@@ -10,6 +11,8 @@ function App() {
       <Banner />
       <About />
       <Skills />
+      <Projects />
+      <Contact />
       <Footer />
     </div>
   );

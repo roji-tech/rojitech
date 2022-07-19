@@ -1,8 +1,6 @@
 import styled from "styled-components";
 
 const SkillStyle = styled.section`
-  padding: 15% 0;
-  padding-left: 10%;
   background-color: var(--bg-light);
   display: grid;
   display: flex;

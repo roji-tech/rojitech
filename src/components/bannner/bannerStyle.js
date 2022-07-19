@@ -17,6 +17,7 @@ const BannerStyle = styled.main`
       font-size: 1.2em;
     }
   }
+
   div {
     padding-left: 15%;
     display: flex;
@@ -37,11 +38,18 @@ const BannerStyle = styled.main`
       font-weight: bold;
     }
 
+    p {
+      span {
+        color: var(--blue);
+        font-family: satisfy;
+      }
+    }
+
     .stack {
-      color: var(--blue);
+      /* color: var(--blue); */
       font-size: 2em;
       font-weight: bolder;
-      text-shadow: 3px 3px #07073084;
+      text-shadow: 2px 1px #07073084;
     }
 
     .socials {
@@ -68,18 +76,17 @@ const BannerStyle = styled.main`
       padding: 20% 0 20%;
       align-items: center;
       gap: 8%;
-      background-color: gray;
+      /* background-color: gray; */
 
       .hi {
         font-family: satisfy;
         font-size: 1.1em;
-        color: var(--bg-white);
+        /* color: var(--bg-white); */
       }
 
       .stack {
-        color: white;
+        /* color: var(--bg-white); */
         font-size: 1.4em;
-        text-shadow: 3px 3px #07073084;
       }
 
       p {
@@ -88,6 +95,12 @@ const BannerStyle = styled.main`
 
       button {
         margin: 20px 0 0;
+      }
+
+      p {
+        /* span {
+          color: var(--bg-white);
+        } */
       }
 
       .socials {

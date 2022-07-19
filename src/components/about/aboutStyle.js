@@ -7,7 +7,6 @@ export const AboutWrap = styled.section`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 15% 10px;
 
   div.about__text {
     margin: 5% 0;

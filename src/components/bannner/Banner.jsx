@@ -14,10 +14,14 @@ const Banner = () => {
       {/* <p className="satisfy custom-3D-title rojitech">ROJITECH</p> */}
       <div>
         <p className="hi">
-          <em>Hi There </em>
+          <em> Hello </em>
         </p>
-        <p className="name"> I am ABDULLAH JAMIU</p>
-        <p className="stack">A Full Stack Developer</p>
+        <p className="name">
+          <span>I am </span> ABDULLAH JAMIU
+        </p>
+        <p className="stack">
+          <span>a</span> Full Stack Developer
+        </p>
 
         <div className="socials">
           <FaTwitter color="var(--blue)" className="social" size={25} />

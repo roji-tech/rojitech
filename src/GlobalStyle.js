@@ -6,8 +6,10 @@ const GlobalStyle = createGlobalStyle`
   --lg-white: #ffffff90;
   --bg-light:	 #D3DCF8;
   --bg-lighter: #d7e1fc;
-  --blue: 	#0749ff;
-  --lightB: 	#5482ff;
+  --blue: 	#0769ff;
+  --blue2: 	#5482ff;
+  --lightB: 	#3AB4F2;
+  --trans: #00000060;
   }
 
   :root {
@@ -34,6 +36,12 @@ const GlobalStyle = createGlobalStyle`
     padding: 0;
     /* color: var(--bg-light); */
   }
+
+  section{
+    padding: 10%;
+  }
+
+
   p{
   }
   
@@ -70,16 +78,11 @@ export const Heading = styled.div`
   flex-direction: column;
   justify-content: "center";
   align-items: center;
+  align-self: start;
   gap: 5px;
   margin-bottom: 30px;
-`;
 
-export const Heading2 = styled.div`
-  width: 100%;
-  background-color: gold;
-  display: flex;
-  flex-direction: column;
-  justify-content: "center";
-  align-items: flex-start;
-  gap: 5px;
+  @media screen and (max-width: 800px) {
+    align-self: center;
+  }
 `;

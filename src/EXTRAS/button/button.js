@@ -11,9 +11,9 @@ export const ButtonStyle = styled.button`
   font-size: 1rem;
   outline: none;
   border-radius: 6px;
-  box-shadow: -6px 6px 0 1px #0000ff;
   /* color: var(--blue); */
   background-color: var(--bg-light);
+  box-shadow: -6px 6px 0 1px var(--blue);
 
   @media screen and (max-width: 800px) {
     box-shadow: -6px 6px 0 1px var(--bg-light);
