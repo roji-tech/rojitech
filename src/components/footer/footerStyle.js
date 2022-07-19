@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const FooterWrapper = styled.footer`
-  background: var(--bg-dark);
+  background: var(--bg-light);
   margin-top: 100px;
   display: flex;
   flex-direction: column;
@@ -9,7 +9,12 @@ export const FooterWrapper = styled.footer`
   justify-content: center;
   align-items: center;
   width: 100%;
-  padding: 20px;
-  padding-top: 40px;
+  padding: 5% 0;
   color: var(--blue);
+
+  @media screen and (max-width: 800px) {
+    color: var(--bg-white)
+    background-color: gray;
+    padding: 12% 0;
+  }
 `;
