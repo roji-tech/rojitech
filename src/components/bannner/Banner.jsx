@@ -6,7 +6,7 @@ import {
   FaWhatsapp,
   FaTelegramPlane,
 } from "react-icons/fa";
-import Button from "../button/Button";
+import Button from "../../EXTRAS/button/Button";
 
 const Banner = () => {
   return (
@@ -20,7 +20,7 @@ const Banner = () => {
         <p className="stack">A Full Stack Developer</p>
 
         <div className="socials">
-          <FaTwitter color="var(--var(--blue))" className="social" size={25} />
+          <FaTwitter color="var(--blue)" className="social" size={25} />
           <FaLinkedinIn color="var(--blue)" size={25} className="social" />
           <FaWhatsapp color="var(--blue)" size={25} className="social" />
           <FaTelegramPlane color="var(--blue)" size={25} className="social" />

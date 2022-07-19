@@ -6,7 +6,7 @@ import SkillBox from "./SkillBox";
 import python from "../../IMGS/python.jpeg";
 import bt from "../../IMGS/bt.jpeg";
 import php from "../../IMGS/php.png";
-import git from "../../IMGS/git.png";
+// import git from "../../IMGS/git.png";
 import cplus from "../../IMGS/c++.png";
 import react from "../../IMGS/react.png";
 import wp from "../../IMGS/wp.png";
@@ -34,7 +34,7 @@ const Skills = () => {
             <SkillBox text={"React"} imgSrc={react} />
             <SkillBox text={"HTML "} imgSrc={html} />
             <SkillBox text={"CSS"} imgSrc={css} />
-            <SkillBox text={"Git"} imgSrc={git} />
+            {/* <SkillBox text={"Git"} imgSrc={git} /> */}
           </div>
         </div>
         <div className="boxes">

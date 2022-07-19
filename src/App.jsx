@@ -1,12 +1,16 @@
 import Banner from "./components/bannner/Banner";
 import About from "./components/about/About";
 import Skills from "./components/skills/Skills";
+import Footer from "./components/footer/Footer"
+
+
 function App() {
   return (
     <div className="App">
       <Banner />
       <About />
       <Skills />
+      <Footer />
     </div>
   );
 }
