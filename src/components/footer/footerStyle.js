@@ -13,7 +13,7 @@ export const FooterWrapper = styled.footer`
   color: var(--blue);
 
   @media screen and (max-width: 800px) {
-    color: var(--bg-white)
+    color: var(--bg-white);
     background-color: gray;
     padding: 12% 0;
   }
