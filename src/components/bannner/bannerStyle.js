@@ -56,6 +56,10 @@ const BannerStyle = styled.main`
         background-color: var(--bg-light);
         border-radius: 50%;
         padding: 3px;
+
+        :hover {
+          transform: scale(1.3);
+        }
       }
     }
 
