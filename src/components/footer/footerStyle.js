@@ -5,7 +5,7 @@ export const FooterWrapper = styled.footer`
   margin-top: 100px;
   display: flex;
   flex-direction: column;
-  gap: 1em;
+  gap: 2em;
   justify-content: center;
   align-items: center;
   width: 100%;
