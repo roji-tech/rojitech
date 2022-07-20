@@ -5,7 +5,9 @@ import {
   FaLinkedinIn,
   FaWhatsapp,
   FaTelegramPlane,
+  FaGithub,
 } from "react-icons/fa";
+import { FiMail } from "react-icons/fi";
 import Button from "../../EXTRAS/button/Button";
 
 const Banner = () => {
@@ -24,10 +26,12 @@ const Banner = () => {
         </p>
 
         <div className="socials">
-          <FaTwitter color="var(--blue)" className="social" size={25} />
-          <FaLinkedinIn color="var(--blue)" size={25} className="social" />
-          <FaWhatsapp color="var(--blue)" size={25} className="social" />
-          <FaTelegramPlane color="var(--blue)" size={25} className="social" />
+          <FaTwitter color="var(--blue)" className="social" size={30} />
+          <FaLinkedinIn color="var(--blue)" size={30} className="social" />
+          <FaWhatsapp color="var(--blue)" size={30} className="social" />
+          <FaTelegramPlane color="var(--blue)" size={30} className="social" />
+          <FiMail color="var(--blue)" size={30} className="social" />
+          <FaGithub color="var(--blue)" size={30} className="social" />
         </div>
         <Button text="Download Resume" />
       </div>

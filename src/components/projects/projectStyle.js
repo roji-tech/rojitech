@@ -22,15 +22,81 @@ export const ProjectStyle = styled.section`
   }
 
   @media screen and (max-width: 800px) {
-
   }
 `;
 
 export const ProjectBoxStyle = styled.div`
   width: 300px;
-  height: 300px;
+  height: 450px;
   border-top-left-radius: 30px;
   border-top-right-radius: 30px;
-  padding: 8%;
-  background-color: var(--lightB);
+  padding: 10px 15px;
+  background-color: var(--bg-light);
+  display: grid;
+  grid-template-rows: 1fr 5fr 3fr 1fr 1fr;
+
+  .appname {
+    text-align: center;
+  }
+
+  .imgBox {
+    overflow: hidden;
+    /* overflow: auto scroll; */
+
+    img {
+      width: 100%;
+      height: 100%;
+      background-color: var(--bg-white);
+    }
+  }
+
+  .desc {
+    margin-top: 3px;
+    overflow: auto scroll;
+  }
+
+  .langs {
+    text-align: center;
+    margin-top: 3px;
+    padding-top: 3px;
+    color: var(--blue);
+  }
+
+  .links {
+    text-align: center;
+    align-items: center;
+    display: grid;
+    grid-template-columns: 50% 50%;
+
+    div {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+      background-color: ${({ bg, disabled }) => (disabled ? bg : bg)};
+      cursor: pointer;
+
+      a {
+        text-decoration: none;
+        text-align: center;
+        width: 80%;
+      }
+    }
+
+    .livelink {
+      background: var(--bg-white);
+    }
+
+    .gitlink {
+      background: var(--blue);
+
+      a {
+        color: white;
+      }
+    }
+
+    .fade {
+      filter: blur(3px);
+    }
+  }
 `;
