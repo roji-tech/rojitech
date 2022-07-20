@@ -7,38 +7,79 @@ export const ContactWrap = styled.section`
   justify-content: center;
   border-radius: 10px;
 
-  form {
-    width: 60%;
-    display: flex;
-    flex-direction: column;
-    /* align-items: center; */
-    justify-content: center;
+  div.contact {
+    width: 100%;
     border-radius: 10px;
-    background-color: var(--blue);
-    padding: 20px;
-    gap: 5%;
+    display: grid;
+    grid-template-columns: 1fr 1.6fr;
 
     @media screen and (max-width: 800px) {
-      width: 90%;
+      display: flex;
+      flex-direction: column-reverse;
     }
 
-    input,
-    textarea {
-      margin: 20px 0;
-      border-radius: 5px;
-      background-color: var(--bg-light);
+    div.socials {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      background-color: gray;
+      gap: 15px;
+
+      a {
+        text-decoration: none;
+        color: initial;
+      }
+
+      @media screen and (max-width: 800px) {
+        padding: 30px 5px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+      }
+    }
+
+    form {
       width: 100%;
-      resize: none;
-      padding: 20px;
-      outline: none;
-    }
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      background-color: var(--blue);
+      padding: 8%;
+      gap: 5%;
 
-    button {
-      width: max-content;
-      align-self: center;
-      padding: 10px 50px;
-      border-radius: 20px;
-      cursor: pointer;
+      input,
+      textarea {
+        margin: 20px 0;
+        border-radius: 5px;
+        background-color: var(--bg-light);
+        width: 100%;
+        resize: none;
+        padding: 20px;
+        outline: none;
+      }
+
+      button {
+        width: max-content;
+        align-self: center;
+        padding: 10px 30%;
+        border-radius: 20px;
+        cursor: pointer;
+      }
     }
   }
+`;
+
+export const ContactBoxStyle = styled.div`
+  width: 120px;
+  aspect-ratio: 1/1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  gap: 10px;
+  border-radius: 50%;
+  background-color: var(--bg-light);
+  cursor: pointer;
 `;

@@ -10,7 +10,15 @@ const GlobalStyle = createGlobalStyle`
   --blue2: 	#5482ff;
   --lightB: 	#3AB4F2;
   --trans: #00000060;
-  }
+
+
+  --dark: 	#5482ff;
+  --blueL: 	#3AB4F2;
+  --trans2: #00000060;  
+
+}
+
+
 
   :root {
     width: 99.99%;
