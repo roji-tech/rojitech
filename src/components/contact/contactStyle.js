@@ -38,6 +38,7 @@ export const ContactWrap = styled.section`
       align-self: center;
       padding: 10px 50px;
       border-radius: 20px;
+      cursor: pointer;
     }
   }
 `;

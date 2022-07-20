@@ -63,6 +63,7 @@ const BannerStyle = styled.main`
       .social {
         background-color: var(--bg-light);
         border-radius: 50%;
+        cursor: pointer;
         padding: 3px;
         transition: 0.3s all ease-in-out;
 
