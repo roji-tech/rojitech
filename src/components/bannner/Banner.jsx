@@ -19,10 +19,10 @@ const Banner = () => {
           <em> Hello </em>
         </p>
         <p className="name">
-          <span>I am </span> ABDULLAH JAMIU
+          <span>I am </span> &nbsp; ABDULLAH JAMIU
         </p>
         <p className="stack">
-          <span>a</span> Full Stack Developer
+          <span>a</span> &nbsp; Full Stack Developer
         </p>
 
         <div className="socials">
