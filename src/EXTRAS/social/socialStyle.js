@@ -13,6 +13,7 @@ export const SocialStyle = styled.div`
     border-radius: 50%;
     padding: 3px;
     transition: 0.3s all ease-in-out;
+    cursor: pointer;
 
     :hover {
       transform: scale(1.3);
