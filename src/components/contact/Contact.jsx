@@ -1,4 +1,4 @@
-import { Heading } from "../../GlobalStyle";
+import { Heading } from "../../StyleGlobal";
 import UnderStroke from "../../EXTRAS/UnderStroke/UnderStroke";
 import { ContactWrap } from "./contactStyle";
 import ContactBox from "./contactBox";
@@ -6,7 +6,7 @@ import { FaWhatsapp, FaLinkedin, FaTelegram, FaTwitter } from "react-icons/fa";
 
 const Contact = () => {
   let size = 30;
-  let color = "var(--blue)";
+  let color = "var(--blue1)";
   let mySocials = [
     {
       text: "WhatsApp",
@@ -27,7 +27,7 @@ const Contact = () => {
   ];
 
   return (
-    <ContactWrap>
+    <ContactWrap id="contact">
       <Heading>
         <h1>Contact Me</h1>
         <UnderStroke />

@@ -2,7 +2,7 @@ import { ProjectBoxStyle } from "./projectStyle";
 
 const ProjectBox = ({ imgSrc, desc, langs, appname, GHlink, LDlink }) => {
   return (
-    <ProjectBoxStyle disabled={true}>
+    <ProjectBoxStyle>
       <p className="appname">{appname}</p>
       <div className="imgBox">
         <img src={imgSrc} alt="" />

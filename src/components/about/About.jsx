@@ -1,12 +1,12 @@
 import React from "react";
-import { Heading } from "../../GlobalStyle";
+import { Heading } from "../../StyleGlobal";
 import { AboutWrap } from "./aboutStyle";
 import UnderStroke from "../../EXTRAS/UnderStroke/UnderStroke";
 // import "./about.css";
 
 const About = () => {
   return (
-    <AboutWrap>
+    <AboutWrap id="about">
       <Heading j_content={"center"}>
         <h1>About Me</h1>
         <UnderStroke />

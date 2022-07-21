@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 const SkillStyle = styled.section`
-  background-color: var(--bg-light);
+  /* background-color: var(--bg-light); */
   display: grid;
   display: flex;
   flex-direction: column;
@@ -22,23 +22,53 @@ const SkillStyle = styled.section`
       flex-direction: column;
       gap: 40px;
 
+      .frontend {
+      }
+
+      .backend {
+      }
+
       .small {
-        color: var(--blue);
-        padding: 15px;
+        margin-left: 15px;
+        color: var(--bg-white);
+        font-weight:1000;
+        padding: 6px 20px;
         border-radius: 30px;
-        background: var(--bg-white);
+        background: var(--bg-light);
         width: max-content;
       }
     }
 
     .box {
-      /* background-color: black; */
       display: flex;
       flex-wrap: wrap;
       align-items: center;
       justify-content: center;
       gap: 40px;
       padding-bottom: 50px;
+    }
+
+    .box.advanced {
+      display: flex;
+      flex-direction: column;
+      /* gap: 30px; */
+
+      div.stack {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+
+        .ends {
+          align-self: center;
+        }
+
+        div.lang {
+          display: flex;
+          justify-content: space-around;
+          flex-wrap: wrap;
+          gap: 20px;
+        }
+      }
     }
 
     .box:not(.last) {
@@ -61,9 +91,9 @@ const SkillStyle = styled.section`
 export default SkillStyle;
 
 export const SkillBoxStyle = styled.div`
-  width: 120px;
-  height: 120px;
-  background-color: var(--lg-white);
+  width: 100px;
+  height: 100px;
+  background-color: var(--bg-blue);
   border-radius: 30px;
   padding: 30px;
   display: flex;
@@ -73,7 +103,7 @@ export const SkillBoxStyle = styled.div`
   align-items: center;
 
   img {
-    width: 70%;
+    width: 35px;
     aspect-ratio: 1/1;
   }
 `;

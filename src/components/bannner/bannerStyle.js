@@ -29,26 +29,29 @@ const BannerStyle = styled.main`
     .hi {
       font-family: satisfy;
       font-size: 1.1em;
-      color: var(--blue);
+      color: var(--trans3);
       letter-spacing: 4px;
     }
 
+    small {
+      color: var(--trans3);
+      text-align: center;
+    }
+
     .name {
+      color: var(--trans3);
       font-size: 1.5em;
       font-weight: bold;
     }
 
     p {
-      span {
-        color: var(--blue);
-        font-family: satisfy;
-      }
     }
 
     .stack {
-      /* color: var(--blue); */
+      color: var(--white);
       font-size: 2em;
       font-weight: bolder;
+      letter-spacing: 1px;
       text-shadow: 2px 1px #07073084;
     }
 
@@ -61,7 +64,7 @@ const BannerStyle = styled.main`
       justify-content: start;
 
       .social {
-        background-color: var(--bg-light);
+        background-color: var(--bg-lighter);
         border-radius: 50%;
         cursor: pointer;
         padding: 3px;
@@ -99,9 +102,6 @@ const BannerStyle = styled.main`
       }
 
       p {
-        /* span {
-          color: var(--bg-white);
-        } */
       }
 
       .socials {

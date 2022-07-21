@@ -4,10 +4,12 @@ import Skills from "./components/skills/Skills";
 import Projects from "./components/projects/Projects";
 import Contact from "./components/contact/Contact";
 import Footer from "./components/footer/Footer";
+import Nav from "./EXTRAS/nav/Nav";
 
 function App() {
   return (
     <div className="App">
+      <Nav />
       <Banner />
       <About />
       <Skills />

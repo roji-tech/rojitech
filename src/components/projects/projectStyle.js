@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const ProjectStyle = styled.section`
-  background: var(--bg-white);
+  /* background: var(--bg-white); */
   padding: 10%;
   padding-left: 10%;
   display: flex;
@@ -31,7 +31,7 @@ export const ProjectBoxStyle = styled.div`
   border-top-left-radius: 30px;
   border-top-right-radius: 30px;
   padding: 10px 15px;
-  background-color: var(--bg-light);
+  background-color: var(--bg-blue);
   display: grid;
   grid-template-rows: 1fr 5fr 3fr 1fr 1fr;
 
@@ -41,7 +41,6 @@ export const ProjectBoxStyle = styled.div`
 
   .imgBox {
     overflow: hidden;
-    /* overflow: auto scroll; */
 
     img {
       width: 100%;
@@ -52,7 +51,6 @@ export const ProjectBoxStyle = styled.div`
 
   .desc {
     margin-top: 3px;
-    overflow: auto scroll;
   }
 
   .langs {

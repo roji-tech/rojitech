@@ -1,6 +1,6 @@
 import React from "react";
 import SkillStyle from "./skillStyle";
-import { Heading } from "../../GlobalStyle";
+import { Heading } from "../../StyleGlobal";
 import UnderStroke from "../../EXTRAS/UnderStroke/UnderStroke";
 import SkillBox from "./SkillBox";
 import python from "../../IMGS/python.jpeg";
@@ -19,7 +19,7 @@ import java from "../../IMGS/java.png";
 
 const Skills = () => {
   return (
-    <SkillStyle>
+    <SkillStyle id="skills">
       <Heading>
         <h1>My Skills</h1>
         <UnderStroke />
@@ -27,16 +27,26 @@ const Skills = () => {
       <div className="skills">
         <div className="boxes">
           <p className="small">Advance</p>
-          <div className="box">
-            <SkillBox text={"Python"} imgSrc={python} />
-            <SkillBox text={"Django"} imgSrc={django} />
+          <div className="box advanced">
+            <div className="stack">
+              <p className="ends">Backend</p>
+              <div className="lang">
+                <SkillBox text={"Python"} imgSrc={python} />
+                <SkillBox text={"Django"} imgSrc={django} />
+              </div>
+            </div>
+            <div className="stack">
+              <p className="ends"> Frontend </p>
+              <div className="lang">
+                <SkillBox text={"Javascript"} imgSrc={js} />
+                <SkillBox text={"React"} imgSrc={react} />
+                <SkillBox text={"Typescript"} imgSrc={ts} />
+                <SkillBox text={"Redux"} imgSrc={redux} />
+                <SkillBox text={"HTML "} imgSrc={html} />
+                <SkillBox text={"CSS"} imgSrc={css} />
+              </div>
+            </div>
             {/* <SkillBox text={"Django DRF"} imgSrc={""} /> */}
-            <SkillBox text={"Javascript"} imgSrc={js} />
-            <SkillBox text={"React"} imgSrc={react} />
-            <SkillBox text={"Typescript"} imgSrc={ts} />
-            <SkillBox text={"Redux"} imgSrc={redux} />
-            <SkillBox text={"HTML "} imgSrc={html} />
-            <SkillBox text={"CSS"} imgSrc={css} />
             {/* <SkillBox text={"Git"} imgSrc={git} /> */}
           </div>
         </div>

@@ -9,14 +9,16 @@ import { FiMail } from "react-icons/fi";
 import { SocialStyle } from "./socialStyle";
 
 const Social = ({ j_content }) => {
+  let color = "var(--blue1)";
+
   return (
     <SocialStyle j_content={j_content}>
-      <FaTwitter color="var(--blue)" className="social" size={25} />
-      <FaLinkedinIn color="var(--blue)" size={25} className="social" />
-      <FaWhatsapp color="var(--blue)" size={25} className="social" />
-      <FaTelegramPlane color="var(--blue)" size={25} className="social" />
-      <FiMail color="var(--blue)" size={30} className="social" />
-      <FaGithub color="var(--blue)" size={30} className="social" />
+      <FaTwitter color={color} className="social" size={25} />
+      <FaLinkedinIn color={color} size={25} className="social" />
+      <FaWhatsapp color={color} size={25} className="social" />
+      <FaTelegramPlane color={color} size={25} className="social" />
+      <FiMail color={color} size={30} className="social" />
+      <FaGithub color={color} size={30} className="social" />
     </SocialStyle>
   );
 };

@@ -1,12 +1,12 @@
 import { ProjectStyle } from "./projectStyle";
 import ProjectBox from "./ProjectBox";
-import { Heading } from "../../GlobalStyle";
+import { Heading } from "../../StyleGlobal";
 import UnderStroke from "../../EXTRAS/UnderStroke/UnderStroke";
 import app from "../../IMGS/redux.png";
 
 const Projects = () => {
   return (
-    <ProjectStyle>
+    <ProjectStyle id="projects">
       <Heading>
         <h1>My Projects</h1>
         <UnderStroke />

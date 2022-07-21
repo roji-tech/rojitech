@@ -9,7 +9,7 @@ export const SocialStyle = styled.div`
   justify-content: ${(prop) => prop.j_content};
 
   .social {
-    background-color: var(--bg-light);
+    background-color: var(--bg-lighter);
     border-radius: 50%;
     padding: 3px;
     transition: 0.3s all ease-in-out;

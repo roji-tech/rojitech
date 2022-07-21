@@ -1,14 +1,14 @@
 import styled from "styled-components";
 
 export const AboutWrap = styled.section`
-  width: 100%;
   display: flex;
-  background-color: var(--bg-white);
+  /* background-color: var(--bg-white); */
   flex-direction: column;
   justify-content: center;
   align-items: center;
 
   div.about__text {
+    line-height: 1.6;
     margin: 5% 0;
     width: 35%;
   }

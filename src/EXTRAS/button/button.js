@@ -11,15 +11,15 @@ export const ButtonStyle = styled.button`
   font-size: 1rem;
   outline: none;
   border-radius: 6px;
-  /* color: var(--blue); */
-  background-color: var(--bg-light);
-  box-shadow: -6px 6px 0 1px var(--blue);
+  color: var(--dark);
+  background-color: var(--blue);
+  box-shadow: -6px 6px 0 1px var(--bg-blue);
 
-  @media screen and (max-width: 800px) {
+  /* @media screen and (max-width: 800px) {
     box-shadow: -6px 6px 0 1px var(--bg-light);
     background-color: var(--blue);
     color: var(--bg-light);
-  }
+  } */
 
   :hover {
     background: var(--lightB);
@@ -47,7 +47,7 @@ export const ButtonStyle = styled.button`
     left: -6px;
 
     @media screen and (max-width: 800px) {
-      border-right: solid 6px var(--bg-light);
+      border-right: solid 6px var(--bg-blue);
     }
   }
 
@@ -66,7 +66,7 @@ export const ButtonStyle = styled.button`
     border-radius: 6px;
 
     @media screen and (max-width: 800px) {
-      border-top: solid 6px var(--bg-light);
+      border-top: solid 6px var(--bg-blue);
     }
   }
 

@@ -23,7 +23,6 @@ export const ContactWrap = styled.section`
       justify-content: center;
       align-items: center;
       flex-direction: column;
-      background-color: gray;
       gap: 15px;
 
       a {
@@ -64,6 +63,9 @@ export const ContactWrap = styled.section`
         align-self: center;
         padding: 10px 30%;
         border-radius: 20px;
+        background-color: var(--bg-blue);
+        color: var(--bg-white);
+        font-weight: 900;
         cursor: pointer;
       }
     }
@@ -71,6 +73,8 @@ export const ContactWrap = styled.section`
 `;
 
 export const ContactBoxStyle = styled.div`
+  color: var(--bg-white);
+  font-weight: 1000;
   width: 120px;
   aspect-ratio: 1/1;
   display: flex;
