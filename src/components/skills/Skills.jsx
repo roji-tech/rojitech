@@ -1,4 +1,15 @@
 import React from "react";
+// import {
+//   FaPython,
+//   FaBootstrap,
+//   FaPhp,
+//   FaReact,
+//   FaWordpress,
+//   FaCss3,
+//   FaHtml5,
+//   FaJava,
+// } from "react-icons/fa";
+
 import SkillStyle from "./skillStyle";
 import { Heading } from "../../StyleGlobal";
 import UnderStroke from "../../EXTRAS/UnderStroke/UnderStroke";
@@ -17,6 +28,7 @@ import html from "../../IMGS/html.png";
 import js from "../../IMGS/js.png";
 import java from "../../IMGS/java.png";
 import sql from "../../IMGS/sql.png";
+import next from "../../IMGS/next.jpeg";
 
 const Skills = () => {
   return (
@@ -41,6 +53,7 @@ const Skills = () => {
               <p className="ends"> Frontend </p>
               <div className="lang">
                 <SkillBox text={"Javascript"} imgSrc={js} />
+                <SkillBox text={"NextJS"} imgSrc={next} />
                 <SkillBox text={"React"} imgSrc={react} />
                 <SkillBox text={"Typescript"} imgSrc={ts} />
                 <SkillBox text={"Redux"} imgSrc={redux} />
@@ -56,12 +69,12 @@ const Skills = () => {
           <p className="small">Intermediate</p>
           <div className="box">
             <SkillBox text={"Bootstrap"} imgSrc={bt} />
-            <SkillBox text={"PHP"} imgSrc={php} />
           </div>
         </div>
         <div className="boxes">
           <p className="small">Basic</p>
           <div className="box last">
+            <SkillBox text={"PHP"} imgSrc={php} />
             <SkillBox text={"C++"} imgSrc={cplus} />
             <SkillBox text={"WordPress"} imgSrc={wp} />
             <SkillBox text={"Java"} imgSrc={java} />
