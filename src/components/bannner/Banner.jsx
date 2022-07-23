@@ -1,5 +1,6 @@
 import BannerStyle from "./bannerStyle";
 import one from "../../IMGS/1.jpeg";
+import CubeSpin from "../../EXTRAS/cubeSpinner";
 import {
   FaTwitter,
   FaLinkedinIn,
@@ -14,14 +15,14 @@ const Banner = () => {
   let color = "var(--blue1)";
 
   return (
-    <BannerStyle id="">
+    <BannerStyle id="top">
       {/* <p className="satisfy custom-3D-title rojitech">ROJITECH</p> */}
       <div>
         <p className="hi satisfy">Hello I'm</p>
         <p className="name"> ABDULLAH JAMIU</p>
         <p className="stack">Full Stack Developer</p>
         <small>
-          I'm Passionate about programming and always willing to learn more.
+          Passionate about programming and always willing to learn more.
         </small>
 
         <div className="socials">
@@ -33,6 +34,9 @@ const Banner = () => {
           <FaGithub color={color} size={30} className="social" />
         </div>
         <Button text="Download Resume" />
+      </div>
+      <div className="cube">
+      <CubeSpin a_width={"100px"} />
       </div>
     </BannerStyle>
   );

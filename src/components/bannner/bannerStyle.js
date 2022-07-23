@@ -4,7 +4,7 @@ const BannerStyle = styled.main`
   display: grid;
   height: 90vh;
   width: 100%;
-  grid-template-columns: 4fr 3fr;
+  grid-template-columns: 5fr 6fr;
   color: black;
 
   .rojitech {
@@ -111,19 +111,11 @@ const BannerStyle = styled.main`
     }
   }
 
-  div.banner__img {
+  div.cube {
     display: flex;
-    align-items: center;
     justify-content: center;
-    background-color: var(--bg-light);
-
-    img {
-      width: 80%;
-
-      @media screen and (max-width: 800px) {
-        width: 90%;
-      }
-    }
+    margin-top: -20%;
+    align-items: flex-start;
   }
 
   @media screen and (max-width: 1100px) {

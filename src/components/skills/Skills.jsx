@@ -16,6 +16,7 @@ import django from "../../IMGS/django.png";
 import html from "../../IMGS/html.png";
 import js from "../../IMGS/js.png";
 import java from "../../IMGS/java.png";
+import sql from "../../IMGS/sql.png";
 
 const Skills = () => {
   return (
@@ -33,6 +34,7 @@ const Skills = () => {
               <div className="lang">
                 <SkillBox text={"Python"} imgSrc={python} />
                 <SkillBox text={"Django"} imgSrc={django} />
+                <SkillBox text={"SQL"} imgSrc={sql} />
               </div>
             </div>
             <div className="stack">

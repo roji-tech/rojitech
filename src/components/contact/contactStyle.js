@@ -75,14 +75,15 @@ export const ContactWrap = styled.section`
 export const ContactBoxStyle = styled.div`
   color: var(--bg-white);
   font-weight: 1000;
-  width: 120px;
+  font-size: 0.8em;
+  width: 100px;
   aspect-ratio: 1/1;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 20px;
-  gap: 10px;
+  padding: 15px;
+  gap: 6px;
   border-radius: 50%;
   background-color: var(--bg-light);
   cursor: pointer;

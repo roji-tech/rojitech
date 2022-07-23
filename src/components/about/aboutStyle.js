@@ -15,14 +15,14 @@ export const AboutWrap = styled.section`
 
   @media screen and (max-width: 900px) {
     div.about__text {
-      width: 50%;
+      width: 60%;
     }
   }
 
   @media screen and (max-width: 600px) {
     div.about__text {
       margin: 5% 0;
-      width: 80%;
+      width: 90%;
     }
   }
 `;

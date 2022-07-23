@@ -2,7 +2,6 @@ import React from "react";
 import { Heading } from "../../StyleGlobal";
 import { AboutWrap } from "./aboutStyle";
 import UnderStroke from "../../EXTRAS/UnderStroke/UnderStroke";
-// import "./about.css";
 
 const About = () => {
   return (

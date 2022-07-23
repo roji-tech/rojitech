@@ -26,7 +26,7 @@ export const ProjectStyle = styled.section`
 `;
 
 export const ProjectBoxStyle = styled.div`
-  width: 310px;
+  width: 400px;
   height: 450px;
   border-top-left-radius: 30px;
   border-top-right-radius: 30px;

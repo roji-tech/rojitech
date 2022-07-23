@@ -5,6 +5,8 @@ import Projects from "./components/projects/Projects";
 import Contact from "./components/contact/Contact";
 import Footer from "./components/footer/Footer";
 import Nav from "./EXTRAS/nav/Nav";
+import CodeChallenge from "./components/codeChallenge";
+import CubeSpin from "./EXTRAS/cubeSpinner";
 
 function App() {
   return (
@@ -14,6 +16,7 @@ function App() {
       <About />
       <Skills />
       <Projects />
+      <CodeChallenge />
       <Contact />
       <Footer />
     </div>

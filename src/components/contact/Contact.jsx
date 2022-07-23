@@ -2,11 +2,11 @@ import { Heading } from "../../StyleGlobal";
 import UnderStroke from "../../EXTRAS/UnderStroke/UnderStroke";
 import { ContactWrap } from "./contactStyle";
 import ContactBox from "./contactBox";
-import { FaWhatsapp, FaLinkedin, FaTelegram, FaTwitter } from "react-icons/fa";
+import { FaWhatsapp, FaLinkedin, FaTelegram, FaTwitter, FaGithub } from "react-icons/fa";
 
 const Contact = () => {
   let size = 30;
-  let color = "var(--blue1)";
+  let color = "var(--bg-white)";
   let mySocials = [
     {
       text: "WhatsApp",
@@ -23,6 +23,10 @@ const Contact = () => {
     {
       text: "Twitter",
       icon: <FaTwitter size={size} color={color} />,
+    },
+    {
+      text: "GitHub",
+      icon: <FaGithub size={size} color={color} />,
     },
   ];
 
