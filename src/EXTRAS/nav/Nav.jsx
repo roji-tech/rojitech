@@ -11,7 +11,7 @@ const Nav = () => {
   const [active, setActive] = useState("");
   const location = useLocation();
   const { lightMode, setLightMode } = LightModeFunc();
-  let color = !lightMode ? "var(--blue1)" : "var(--white)";
+  let color = !lightMode ? "var(--bg-light)" : "var(--white)";
 
   //   function to scroll up
   const toTop = () => {
