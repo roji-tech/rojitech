@@ -11,6 +11,7 @@ const Nav = () => {
   const [active, setActive] = useState("");
   const location = useLocation();
   const { lightMode, setLightMode } = LightModeFunc();
+  let color = !lightMode ? "var(--blue1)" : "var(--white)";
 
   //   function to scroll up
   const toTop = () => {
@@ -32,42 +33,42 @@ const Nav = () => {
         // <Link to={"/projects"}>View more Projects</Link>
         <>
           <div onClick={toTop} className={active === "" ? "active" : ""}>
-            <AiOutlineHome />
+            <AiOutlineHome color={color} />
           </div>
           <a
             href="#about"
             onClick={() => setActive("#about")}
             className={active === "#about" ? "active" : ""}
           >
-            <AiOutlineUser />
+            <AiOutlineUser color={color} />
           </a>
           <a
             href="#skills"
             onClick={() => setActive("#skills")}
             className={active === "#skills" ? "active" : ""}
           >
-            <BiBook />
+            <BiBook color={color} />
           </a>
           <a
             href="#projects"
             onClick={() => setActive("#projects")}
             className={active === "#projects" ? "active" : ""}
           >
-            <RiServerLine />
+            <RiServerLine color={color} />
           </a>
           <a
             href="#challenge"
             onClick={() => setActive("#challenge")}
             className={active === "#challenge" ? "active" : ""}
           >
-            <BiMessageSquareDetail />
+            <BiMessageSquareDetail color={color} />
           </a>
           <a
             href="#contact"
             onClick={() => setActive("#contact")}
             className={active === "#contact" ? "active" : ""}
           >
-            <BiMessageSquareDetail />
+            <BiMessageSquareDetail color={color} />
           </a>
           <div onClick={toLight} className={lightMode ? "lightMode" : ""}>
             <FaMoon color={lightMode ? "black" : "white"} />
@@ -77,7 +78,7 @@ const Nav = () => {
         <>
           <Link to={"/"} className="myLink">
             <div onClick={toTop} className={active === "" ? "active" : ""}>
-              <AiOutlineHome />
+              <AiOutlineHome color={color} />
             </div>
           </Link>
           <div onClick={toLight} className={lightMode ? "lightMode" : ""}>

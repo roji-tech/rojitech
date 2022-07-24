@@ -8,7 +8,7 @@ export const AboutWrap = styled.section`
   align-items: center;
 
   div.about__text {
-    line-height: 1.6;
+    line-height: 1.8rem;
     margin: 5% 0;
     width: 35%;
   }

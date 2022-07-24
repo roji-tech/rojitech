@@ -1,8 +1,10 @@
 import React from "react";
-
+import LightModeFunc from "../../Context";
 import "./understroke.css";
 
-const UnderStroke = ({color, dark }) => {
+const UnderStroke = ({ color, dark }) => {
+  const { lightMode } = LightModeFunc();
+
   let underDiv = {
     width: "10em",
     height: "3px",
@@ -11,14 +13,14 @@ const UnderStroke = ({color, dark }) => {
     justifyContent: "center",
     alignItems: "center",
     position: "relative",
-    backgroundColor: "var(--blue2)"
+    backgroundColor: `${!lightMode ? "var(--blue2)" : "var(--dark)"}`,
   };
 
   let underSpan = {
     display: "inline-block",
     width: "3em",
     height: "100%",
-    backgroundColor: "var(--bg-light)",
+    backgroundColor: `${!lightMode ? "var(--bg-light)" : "var(--white)"}`,
     borderRadius: "50%",
     position: "absolute",
     transform: "scaleY(300%)",
