@@ -21,6 +21,21 @@ export const ProjectStyle = styled.section`
     }
   }
 
+  .seeMore {
+    display: flex;
+    justify-content: end;
+
+    .morePro {
+      border-radius: 10px;
+      text-decoration: none;
+      padding: 10px;
+      background-color: ${({ lightMode }) =>
+        !lightMode ? "var(--blue)" : "var(--dark)"};
+      color: var(--white);
+      font-style: oblique;
+    }
+  }
+
   @media screen and (max-width: 800px) {
   }
 `;

@@ -25,7 +25,7 @@ const GlobalStyle = createGlobalStyle`
   --trans2: rgba(77, 181, 255, 0.4);
   --trans3: rgba(255, 255, 255, 0.6);
 
-  --lg-width : 75%;
+  --lg-width : 70%;
   --md-width : 85%;
   --sm-width : 90%;
 

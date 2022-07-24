@@ -4,12 +4,14 @@ import ProjectBox from "./ProjectBox";
 import { Heading } from "../../StyleGlobal";
 import UnderStroke from "../../EXTRAS/UnderStroke/UnderStroke";
 import myProjects from "./myProjects.json";
+import LightModeFunc from "../../Context";
 
 const Projects = () => {
   const location = useLocation();
+  const { lightMode } = LightModeFunc();
 
   return (
-    <ProjectStyle id="projects">
+    <ProjectStyle lightMode={lightMode} id="projects">
       <Heading>
         <h1>My Projects</h1>
         <UnderStroke />
@@ -30,8 +32,13 @@ const Projects = () => {
           )
         )}
       </ul>
+
       {location.pathname === "/" && (
-        <Link to={"/projects"}>View more Projects</Link>
+        <div className="seeMore">
+          <Link to={"/projects"} className="morePro">
+            View more Projects
+          </Link>
+        </div>
       )}
     </ProjectStyle>
   );

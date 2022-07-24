@@ -3,9 +3,14 @@ import styled from "styled-components";
 const BannerStyle = styled.main`
   display: grid;
   height: 90vh;
-  width: 100%;
   grid-template-columns: 5fr 6fr;
   color: ${({ lightMode }) => (!lightMode ? "var(--white)" : "var(--dark)")};
+  width: 85%;
+
+  @media screen and (max-width: 1125px) {
+    width: 90%;
+  }
+
 
   .rojitech {
     position: absolute;
@@ -27,7 +32,7 @@ const BannerStyle = styled.main`
     gap: 5%;
 
     .hi {
-      font-family: satisfy;
+      /* font-family: satisfy; */
       font-size: 1.1em;
       color: ${({ lightMode }) =>
         !lightMode ? "var(--trans3)" : "var(--dark)"};
