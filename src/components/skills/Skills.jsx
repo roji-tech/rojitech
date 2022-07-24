@@ -29,10 +29,13 @@ import js from "../../IMGS/js.png";
 import java from "../../IMGS/java.png";
 import sql from "../../IMGS/sql.png";
 import next from "../../IMGS/next.jpeg";
+import LightModeFunc from "../../Context";
 
 const Skills = () => {
+  const { lightMode } = LightModeFunc();
+
   return (
-    <SkillStyle id="skills">
+    <SkillStyle lightMode={lightMode} id="skills">
       <Heading>
         <h1>My Skills</h1>
         <UnderStroke />

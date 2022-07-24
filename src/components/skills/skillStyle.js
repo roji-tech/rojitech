@@ -31,10 +31,11 @@ const SkillStyle = styled.section`
       .small {
         margin-left: 15px;
         color: var(--bg-white);
-        font-weight:1000;
+        font-weight: 1000;
         padding: 6px 20px;
         border-radius: 30px;
-        background: var(--bg-light);
+        background: ${({ lightMode }) =>
+          !lightMode ? "var(--bg-light)" : "var(--dark)"};
         width: max-content;
       }
     }
