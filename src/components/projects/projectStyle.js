@@ -2,14 +2,11 @@ import styled from "styled-components";
 
 export const ProjectStyle = styled.section`
   /* background: var(--bg-white); */
-  padding: 10%;
-  padding-left: 10%;
   display: flex;
   flex-direction: column;
   /* justify-content: center;
   align-items: center; */
-  width: 100%;
-  /* color: var(--bg-white); */
+
 
   .projects {
     gap: 2em;

@@ -6,7 +6,7 @@ import UnderStroke from "../../EXTRAS/UnderStroke/UnderStroke";
 const CodeChallenge = () => {
   return (
     <CCStyles id="challenge">
-      <Heading>
+      <Heading j_content={"center"}>
         <h1>Coding Challenges</h1>
         <UnderStroke />
       </Heading>
