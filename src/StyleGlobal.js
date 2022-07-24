@@ -1,26 +1,27 @@
 import styled, { createGlobalStyle } from "styled-components";
+import bgImage from "./IMGS/bg.png";
 
 const GlobalStyle = createGlobalStyle`
 
-    html{
-        scroll-behavior: smooth;
-    }
+  html{
+      scroll-behavior: smooth;
+  }
 
   :root {
   --bg-white: #fff;
-
-  --white: #ffffff90;
   --white2: #ffffff10;
-  --bg-light:	 #D3DCF899;
+
   --bg-lighter: #d7e1fc;
+
   --blue: 	#119bf1;
   --blue1: 	#0769ff;
   --blue2: 	#4db5ff;
   --lightB: 	#3AB4F2;
+
   --trans: #00000060;
 
-  --dark: 	#1f1f38;
-  --bg-blue: 	#2c2c6c;
+
+
   --trans2: rgba(77, 181, 255, 0.4);
   --trans3: rgba(255, 255, 255, 0.6);
 
@@ -28,6 +29,16 @@ const GlobalStyle = createGlobalStyle`
   --md-width : 85%;
   --sm-width : 90%;
 
+  
+  /* DarkMode */
+  --dark: 	#1f1f38;
+  --bg-blue: 	#2c2c6c;
+  --white:  rgba(255, 255, 255, 0.8);
+
+    /* LightMode */
+  --bg-light:	 #81c1ee;
+  --bg-blue: 	#2c2c6c;
+  --white:  rgba(255, 255, 255, 0.8);
 
     width: 99.99%;
     display: flex;
@@ -44,18 +55,23 @@ const GlobalStyle = createGlobalStyle`
 }
 
   body {
-    background-color: var(--dark);
+    background-color: ${({ lightMode }) =>
+      !lightMode ? "var(--dark)" : "var(--bg-light)"};
+    background-image: ${({ lightMode }) =>
+      !lightMode ? `url(${bgImage})` : "none"};
     width: 99.95%;
 
     
+    
     margin: 0;
     padding: 0;
-
+    
     .App{
       display: flex;
       flex-direction: column;
       align-items: center;
-      color: var(--white)
+        color: ${({ lightMode }) =>
+          !lightMode ? "var(--white)" : "var(--dark)"};
     }
 
     @media screen and (max-width: 1025px) {

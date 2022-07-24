@@ -1,25 +1,26 @@
-import Banner from "./components/bannner/Banner";
-import About from "./components/about/About";
-import Skills from "./components/skills/Skills";
-import Projects from "./components/projects/Projects";
-import Contact from "./components/contact/Contact";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Home from "./pages/Home";
+import AllProjects from "./pages/AllProjects";
 import Footer from "./components/footer/Footer";
 import Nav from "./EXTRAS/nav/Nav";
-import CodeChallenge from "./components/codeChallenge";
-import CubeSpin from "./EXTRAS/cubeSpinner";
+import GlobalStyle from "./StyleGlobal";
+import LightModeFunc from "./Context";
 
 function App() {
+  const { lightMode } = LightModeFunc();
+
   return (
-    <div className="App">
+    <BrowserRouter>
+      <GlobalStyle lightMode={lightMode} />
       <Nav />
-      <Banner />
-      <About />
-      <Skills />
-      <Projects />
-      <CodeChallenge />
-      <Contact />
+      <div className="App">
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="projects" element={<AllProjects />} />
+        </Routes>
+      </div>
       <Footer />
-    </div>
+    </BrowserRouter>
   );
 }
 

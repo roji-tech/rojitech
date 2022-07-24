@@ -5,7 +5,7 @@ const BannerStyle = styled.main`
   height: 90vh;
   width: 100%;
   grid-template-columns: 5fr 6fr;
-  color: black;
+  color: ${({ lightMode }) => (!lightMode ? "var(--white)" : "var(--dark)")};
 
   .rojitech {
     position: absolute;
@@ -29,17 +29,19 @@ const BannerStyle = styled.main`
     .hi {
       font-family: satisfy;
       font-size: 1.1em;
-      color: var(--trans3);
+      color: ${({ lightMode }) =>
+        !lightMode ? "var(--trans3)" : "var(--dark)"};
       letter-spacing: 4px;
     }
 
     small {
       color: var(--trans3);
       text-align: center;
+      color: ${({ lightMode }) =>
+        !lightMode ? "var(--trans3)" : "var(--dark)"};
     }
 
     .name {
-      color: var(--trans3);
       font-size: 1.5em;
       font-weight: bold;
     }
@@ -48,7 +50,6 @@ const BannerStyle = styled.main`
     }
 
     .stack {
-      color: var(--white);
       font-size: 2em;
       font-weight: bolder;
       letter-spacing: 1px;

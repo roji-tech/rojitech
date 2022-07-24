@@ -11,7 +11,7 @@ export const ProjectStyle = styled.section`
   width: 100%;
   /* color: var(--bg-white); */
 
-  div.projects {
+  .projects {
     gap: 2em;
     display: flex;
     justify-content: center;

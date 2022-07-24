@@ -10,12 +10,13 @@ import {
 } from "react-icons/fa";
 import { FiMail } from "react-icons/fi";
 import Button from "../../EXTRAS/button/Button";
+import LightModeFunc from "../../Context";
 
 const Banner = () => {
-  let color = "var(--blue1)";
-
+  const { lightMode } = LightModeFunc();
+  let color = !lightMode ? "var(--blue1)" : "var(--dark)";
   return (
-    <BannerStyle id="top">
+    <BannerStyle lightMode={lightMode} id="top">
       {/* <p className="satisfy custom-3D-title rojitech">ROJITECH</p> */}
       <div>
         <p className="hi satisfy">Hello I'm</p>
@@ -36,7 +37,7 @@ const Banner = () => {
         <Button text="Download Resume" />
       </div>
       <div className="cube">
-      <CubeSpin a_width={"100px"} />
+        <CubeSpin a_width={"100px"} />
       </div>
     </BannerStyle>
   );

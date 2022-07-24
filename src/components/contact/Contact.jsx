@@ -2,31 +2,47 @@ import { Heading } from "../../StyleGlobal";
 import UnderStroke from "../../EXTRAS/UnderStroke/UnderStroke";
 import { ContactWrap } from "./contactStyle";
 import ContactBox from "./contactBox";
-import { FaWhatsapp, FaLinkedin, FaTelegram, FaTwitter, FaGithub } from "react-icons/fa";
+import {
+  FaWhatsapp,
+  FaLinkedin,
+  FaTelegram,
+  FaTwitter,
+  FaGithub,
+} from "react-icons/fa";
 
 const Contact = () => {
   let size = 30;
   let color = "var(--bg-white)";
   let mySocials = [
     {
+      id: 1,
       text: "WhatsApp",
       icon: <FaWhatsapp size={size} color={color} />,
+      link: "",
     },
     {
+      id: 2,
       text: "LinkedIn",
       icon: <FaLinkedin size={size} color={color} />,
+      link: "",
     },
     {
+      id: 3,
       text: "Telegram",
       icon: <FaTelegram size={size} color={color} />,
+      link: "",
     },
     {
+      id: 4,
       text: "Twitter",
       icon: <FaTwitter size={size} color={color} />,
+      link: "",
     },
     {
+      id: 5,
       text: "GitHub",
       icon: <FaGithub size={size} color={color} />,
+      link: "https://github.com/roji-tech",
     },
   ];
 
@@ -39,10 +55,8 @@ const Contact = () => {
 
       <div className="contact">
         <div className="socials">
-          {mySocials.map(({ text, icon }) => (
-            <a href="">
-              <ContactBox icon={icon} text={text} />
-            </a>
+          {mySocials.map(({ id, text, icon, link }) => (
+              <ContactBox key={id} icon={icon} link={link} text={text} />
           ))}
         </div>
         <form>
@@ -61,6 +75,7 @@ const Contact = () => {
             name="message"
             id="message"
             placeholder="Message"
+            rows="4"
           ></textarea>
 
           <button>Send</button>

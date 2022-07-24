@@ -69,12 +69,12 @@ const Skills = () => {
           <p className="small">Intermediate</p>
           <div className="box">
             <SkillBox text={"Bootstrap"} imgSrc={bt} />
+            <SkillBox text={"PHP"} imgSrc={php} />
           </div>
         </div>
         <div className="boxes">
           <p className="small">Basic</p>
           <div className="box last">
-            <SkillBox text={"PHP"} imgSrc={php} />
             <SkillBox text={"C++"} imgSrc={cplus} />
             <SkillBox text={"WordPress"} imgSrc={wp} />
             <SkillBox text={"Java"} imgSrc={java} />

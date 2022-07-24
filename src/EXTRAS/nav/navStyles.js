@@ -6,13 +6,17 @@ const NavStyle = styled.nav`
   display: block;
   padding: 0.5em 1.4em;
   position: fixed;
-  z-index: 2;
+  z-index: 999;
   left: 50%;
   transform: translateX(-50%);
   bottom: 2rem;
   display: flex;
   border-radius: 3rem;
   backdrop-filter: blur(15px);
+
+  @media screen and (max-width: 400px) {
+    padding: 0.5em 1em;
+  }
 
   a,
   div {
@@ -25,10 +29,20 @@ const NavStyle = styled.nav`
     :hover {
       background-color: rgba(0, 0, 0, 0.5);
     }
+
+    @media screen and (max-width: 400px) {
+      padding: 0.6rem;
+    }
   }
 
   .active {
-    background-color: var(--blue);
+    background-color: rgba(0, 0, 0, 0.7);
+  }
+
+  .myLink {
+    text-decoration: none;
+    padding: 0;
+    margin: 0;
   }
 `;
 

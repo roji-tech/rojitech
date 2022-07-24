@@ -11,16 +11,18 @@ const ProjectBox = ({ imgSrc, desc, langs, appname, GHlink, LDlink }) => {
         <small>{desc}</small>
       </div>
 
-      <p className="langs">
-        <p>{langs}</p>
-      </p>
+      <p className="langs">{langs}</p>
 
       <div className="links">
         <div className={`livelink ${LDlink ? "" : "fade"} `}>
-          <a href={LDlink}>Live Demo</a>
+          <a href={LDlink} target="_blank" rel="noreferrer">
+            Live Demo
+          </a>
         </div>
         <div className={`gitlink ${GHlink ? "" : "fade"} `}>
-          <a href={GHlink}>Github</a>
+          <a href={GHlink} target="_blank" rel="noreferrer">
+            Github
+          </a>
         </div>
       </div>
     </ProjectBoxStyle>

@@ -1,11 +1,13 @@
 import { ContactBoxStyle } from "./contactStyle";
 
-const ContactBox = ({ icon, text }) => {
+const ContactBox = ({ link, icon, text }) => {
   return (
-    <ContactBoxStyle>
-      {icon}
-      <p> {text} </p>
-    </ContactBoxStyle>
+    <a href={link} target={"_blank"} rel="noreferrer">
+      <ContactBoxStyle>
+        {icon}
+        <p> {text} </p>
+      </ContactBoxStyle>
+    </a>
   );
 };
 

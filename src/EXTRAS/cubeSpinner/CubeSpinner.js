@@ -9,7 +9,7 @@ const CubeSpinnerStyle = styled.div`
   height: 90%;
 
   overflow: hidden;
-  z-index: 999;
+  z-index: 200;
 
   @media screen and (max-width: 1100px) {
     --anim-width: 50px;
@@ -44,7 +44,8 @@ const CubeSpinnerStyle = styled.div`
       width: ${({ width }) => (width ? width : "200px")};
       aspect-ratio: 1/1;
       border: 1px solid #ccc;
-      background: rgba(255, 255, 255, 0.4);
+      background: ${({ lightMode }) =>
+        !lightMode ? "rgba(255, 255, 255, 0.4)" : "var(--lightB)"};
       text-align: center;
       font-size: 100px;
       display: flex;
