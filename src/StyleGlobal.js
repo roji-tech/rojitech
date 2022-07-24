@@ -23,7 +23,7 @@ const GlobalStyle = createGlobalStyle`
 
 
   --trans2: rgba(77, 181, 255, 0.4);
-  --trans3: rgba(255, 255, 255, 0.6);
+  --black: rgba(0, 0, 0, 0.9);
 
   --lg-width : 70%;
   --md-width : 85%;
@@ -71,7 +71,7 @@ const GlobalStyle = createGlobalStyle`
       flex-direction: column;
       align-items: center;
         color: ${({ lightMode }) =>
-          !lightMode ? "var(--white)" : "var(--dark)"};
+          !lightMode ? "var(--white)" : "var(--black)"};
     }
 
     @media screen and (max-width: 1025px) {

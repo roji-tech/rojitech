@@ -4,13 +4,13 @@ const BannerStyle = styled.main`
   display: grid;
   height: 90vh;
   grid-template-columns: 5fr 6fr;
-  color: ${({ lightMode }) => (!lightMode ? "var(--white)" : "var(--dark)")};
+  /* color: ${({ lightMode }) =>
+    !lightMode ? "var(--white)" : "var(--dark)"}; */
   width: 85%;
 
   @media screen and (max-width: 1125px) {
     width: 90%;
   }
-
 
   .rojitech {
     position: absolute;
@@ -35,7 +35,7 @@ const BannerStyle = styled.main`
       /* font-family: satisfy; */
       font-size: 1.1em;
       color: ${({ lightMode }) =>
-        !lightMode ? "var(--trans3)" : "var(--dark)"};
+        !lightMode ? "var(--trans3)" : "var(--black)"};
       letter-spacing: 4px;
     }
 
@@ -44,6 +44,12 @@ const BannerStyle = styled.main`
       text-align: center;
       color: ${({ lightMode }) =>
         !lightMode ? "var(--trans3)" : "var(--dark)"};
+    }
+
+    .langs {
+      margin: 0;
+      font-size: x-small;
+      padding: 0;
     }
 
     .name {

@@ -19,9 +19,12 @@ const Banner = () => {
     <BannerStyle lightMode={lightMode} id="top">
       {/* <p className="satisfy custom-3D-title rojitech">ROJITECH</p> */}
       <div>
-        <p className="hi satisfy">Hello I'm</p>
+        <p className="hi">Hello I'm</p>
         <p className="name"> ABDULLAH JAMIU</p>
         <p className="stack">Full Stack Developer</p>
+        <small className="langs">
+          Python Django Javascript ReactJS NextJS
+        </small>
         <small>
           Passionate about programming and always willing to learn more.
         </small>

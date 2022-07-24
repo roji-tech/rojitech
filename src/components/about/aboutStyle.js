@@ -10,10 +10,10 @@ export const AboutWrap = styled.section`
   div.about__text {
     line-height: 1.8rem;
     margin: 5% 0;
-    width: 35%;
+    width: 40%;
   }
 
-  @media screen and (max-width: 900px) {
+  @media screen and (max-width: 1050px) {
     div.about__text {
       width: 60%;
     }

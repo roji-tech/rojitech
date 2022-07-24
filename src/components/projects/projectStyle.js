@@ -26,7 +26,8 @@ export const ProjectStyle = styled.section`
     justify-content: end;
 
     .morePro {
-      border-radius: 10px;
+      font-size: .8rem;
+      border-radius: 20px;
       text-decoration: none;
       padding: 10px;
       background-color: ${({ lightMode }) =>
