@@ -6,7 +6,7 @@ const NavStyle = styled.nav`
   display: block;
   padding: 0.5em 1.4em;
   position: fixed;
-  z-index: 999;
+  z-index: 990;
   left: 50%;
   transform: translateX(-50%);
   bottom: 2rem;
@@ -25,6 +25,30 @@ const NavStyle = styled.nav`
     border-radius: 50%;
     display: flex;
     color: var(--light);
+    position: relative;
+    z-index: 991;
+    cursor: pointer;
+
+    ::after {
+      content: attr(data);
+      width: max-content;
+      height: max-content;
+      position: absolute;
+      padding: 2px 5px;
+      color: ${({ lightMode }) => (!lightMode ? "var(--light)" : "var(--white)")};
+      top: -25px;
+      left: 0;
+      opacity: 0;
+      border-radius: 20px;
+      background: ${({ lightMode }) =>
+        !lightMode ? "var(--blue)" : "var(--dark)"};
+      transition: opacity 0.4s ease-in-out;
+      z-index: 993;
+    }
+
+    :hover::after {
+      opacity: 1;
+    }
 
     :hover {
       background-color: rgba(0, 0, 0, 0.5);

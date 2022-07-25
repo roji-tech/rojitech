@@ -28,17 +28,21 @@ const Nav = () => {
   };
 
   return (
-    <NavStyle>
+    <NavStyle lightMode={lightMode}>
       {location.pathname === "/" ? (
-        // <Link to={"/projects"}>View more Projects</Link>
         <>
-          <div onClick={toTop} className={active === "" ? "active" : ""}>
+          <div
+            data="Top"
+            onClick={toTop}
+            className={active === "" ? "active" : ""}
+          >
             <AiOutlineHome color={color} />
           </div>
           <a
             href="#about"
             onClick={() => setActive("#about")}
-            className={active === "#about" ? "active" : ""}
+            className={`${active === "#about" ? "active" : ""}`}
+            data="About"
           >
             <AiOutlineUser color={color} />
           </a>
@@ -46,6 +50,7 @@ const Nav = () => {
             href="#skills"
             onClick={() => setActive("#skills")}
             className={active === "#skills" ? "active" : ""}
+            data="Skills"
           >
             <BiBook color={color} />
           </a>
@@ -53,6 +58,7 @@ const Nav = () => {
             href="#projects"
             onClick={() => setActive("#projects")}
             className={active === "#projects" ? "active" : ""}
+            data="Projects"
           >
             <RiServerLine color={color} />
           </a>
@@ -60,6 +66,7 @@ const Nav = () => {
             href="#challenge"
             onClick={() => setActive("#challenge")}
             className={active === "#challenge" ? "active" : ""}
+            data="Challenge"
           >
             <BiMessageSquareDetail color={color} />
           </a>
@@ -67,22 +74,35 @@ const Nav = () => {
             href="#contact"
             onClick={() => setActive("#contact")}
             className={active === "#contact" ? "active" : ""}
+            data="Contact"
           >
             <BiMessageSquareDetail color={color} />
           </a>
-          <div onClick={toLight} className={lightMode ? "lightMode" : ""}>
+          <div
+            onClick={toLight}
+            className={lightMode ? "lightMode" : ""}
+            data={!lightMode ? "Light" : "Dark"}
+          >
             <FaMoon color={lightMode ? "black" : "white"} />
           </div>
         </>
       ) : (
         <>
           <Link to={"/"} className="myLink">
-            <div onClick={toTop} className={active === "" ? "active" : ""}>
+            <div
+              onClick={toTop}
+              className={active === "" ? "active" : ""}
+              data="Home"
+            >
               <AiOutlineHome color={color} />
             </div>
           </Link>
-          <div onClick={toLight} className={lightMode ? "lightMode" : ""}>
-            <FaMoon color={lightMode ? "white" : "black"} />
+          <div
+            onClick={toLight}
+            className={lightMode ? "lightMode" : ""}
+            data={!lightMode ? "Light" : "Dark"}
+          >
+            <FaMoon color={!lightMode ? "white" : "black"} />
           </div>
         </>
       )}
