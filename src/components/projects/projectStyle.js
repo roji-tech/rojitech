@@ -1,7 +1,6 @@
 import styled from "styled-components";
 
 export const ProjectStyle = styled.section`
-  /* background: var(--bg-white); */
   display: flex;
   flex-direction: column;
   /* justify-content: center;
@@ -10,9 +9,9 @@ export const ProjectStyle = styled.section`
   .projects {
     gap: 2em;
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     flex-wrap: wrap;
-    margin: 5% 2%;
+    margin: 4% 1.5%;
     @media screen and (max-width: 1000px) {
     }
   }

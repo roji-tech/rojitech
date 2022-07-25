@@ -1,5 +1,5 @@
 import { ProjectStyle } from "./projectStyle";
-import { Link, useLocation } from "react-router-dom";
+import { Link } from "react-router-dom";
 import ProjectBox from "./ProjectBox";
 import { Heading } from "../../StyleGlobal";
 import UnderStroke from "../../EXTRAS/UnderStroke/UnderStroke";
@@ -7,7 +7,6 @@ import myProjects from "./myProjects.json";
 import LightModeFunc from "../../Context";
 
 const Projects = () => {
-  const location = useLocation();
   const { lightMode } = LightModeFunc();
 
   return (
@@ -18,8 +17,9 @@ const Projects = () => {
       </Heading>
 
       <ul className="projects">
-        {myProjects.map(
-          ({ id, appname, LDlink, imgSrc, desc, GHlink, langs }) => (
+        {myProjects
+          .filter((project) => project["top"] === true)
+          .map(({ id, appname, LDlink, imgSrc, desc, GHlink, langs }) => (
             <ProjectBox
               key={id}
               imgSrc={require(`../../IMGS/${imgSrc ? imgSrc : "redux.png"}`)}
@@ -29,17 +29,14 @@ const Projects = () => {
               desc={desc}
               appname={appname}
             />
-          )
-        )}
+          ))}
       </ul>
 
-      {location.pathname === "/" && (
-        <div className="seeMore">
-          <Link to={"/projects"} className="morePro">
-            View more Projects
-          </Link>
-        </div>
-      )}
+      <div className="seeMore">
+        <Link to={"/projects"} className="morePro">
+          View more Projects
+        </Link>
+      </div>
     </ProjectStyle>
   );
 };

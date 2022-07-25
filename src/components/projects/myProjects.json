@@ -6,7 +6,8 @@
         "GHlink": "https://github.com/roji-tech/react-online-food-restaurant",
         "langs": "ReactJS",
         "desc": "An Online Food restarant with reactjs which made me more grounded in react especially react custom hooks.",
-        "imgSrc": "food-rest.png"
+        "imgSrc": "food-rest.png",
+        "top": true
     },
     {
         "id": 2,
@@ -14,7 +15,8 @@
         "GHlink": "",
         "langs": "",
         "desc": "",
-        "imgSrc": ""
+        "imgSrc": "",
+        "top": true
     },
     {
         "id": 3,
@@ -22,7 +24,8 @@
         "GHlink": "",
         "langs": "",
         "desc": "",
-        "imgSrc": ""
+        "imgSrc": "",
+        "top": true
     },
     {
         "id": 4,
@@ -30,7 +33,8 @@
         "GHlink": "",
         "langs": "",
         "desc": "",
-        "imgSrc": ""
+        "imgSrc": "",
+        "top": true
     },
     {
         "id": 5,
@@ -38,6 +42,7 @@
         "GHlink": "",
         "langs": "",
         "desc": "",
-        "imgSrc": ""
+        "imgSrc": "",
+        "top": false
     }
 ]
