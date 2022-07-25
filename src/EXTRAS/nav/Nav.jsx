@@ -62,14 +62,14 @@ const Nav = () => {
           >
             <RiServerLine color={color} />
           </a>
-          <a
+          {/* <a
             href="#challenge"
             onClick={() => setActive("#challenge")}
             className={active === "#challenge" ? "active" : ""}
             data="Challenge"
           >
             <BiMessageSquareDetail color={color} />
-          </a>
+          </a> */}
           <a
             href="#contact"
             onClick={() => setActive("#contact")}

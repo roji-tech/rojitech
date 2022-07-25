@@ -12,7 +12,7 @@ const Home = () => {
       <About />
       <Skills />
       <Projects />
-      <CodeChallenge />
+      {/* <CodeChallenge /> */}
       <Contact />
     </>
   );
