@@ -80,7 +80,7 @@ const Contact = () => {
             rows="6"
           ></textarea>
 
-          <button>Send</button>
+          <button onClick={(e) => e.preventDefault()}>Send</button>
         </form>
       </div>
     </ContactWrap>
