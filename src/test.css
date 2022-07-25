@@ -5,4 +5,5 @@
   --bg-light: #D3DCF899;
   color: #81c1ee;
   background-color: linear-gradie;
+  transform: skew();
 }

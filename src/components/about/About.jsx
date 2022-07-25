@@ -12,11 +12,17 @@ const About = () => {
       </Heading>
 
       <div className="about__text">
-        I'm a Full-stack Developer and Cyber Security Enthusiast with almost 2
-        years experience in programming, I'm passionate about programming, and
-        I've been able to build and equip myself with full-stack technologies to
-        enable me stand out in the tech industry and be able to contribute to it
-        positively.
+        <p>
+          &nbsp;&nbsp;&nbsp;&nbsp; I'm a Full-stack Developer and Cyber Security
+          Enthusiast with almost 2 years experience in programming, I'm
+          passionate about programming, and more than willing to learn more.
+        </p>
+        <br />
+        <p>
+          &nbsp;&nbsp;&nbsp;&nbsp; I've been able to build and equip myself with
+          full-stack technologies to enable me stand out in the tech industry
+          and be able to contribute to it positively.
+        </p>
       </div>
     </AboutWrap>
   );

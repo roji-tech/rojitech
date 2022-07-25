@@ -1,5 +1,4 @@
 import BannerStyle from "./bannerStyle";
-import one from "../../IMGS/1.jpeg";
 import CubeSpin from "../../EXTRAS/cubeSpinner";
 import {
   FaTwitter,

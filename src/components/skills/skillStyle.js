@@ -30,7 +30,8 @@ const SkillStyle = styled.section`
 
       .small {
         margin-left: 15px;
-        color: var(--bg-blue);
+        color: ${({ lightMode }) =>
+          !lightMode ? "var(--bg-blue)" : "var(--bg-white)"};
         font-weight: 1000;
         padding: 6px 20px;
         border-radius: 30px;
@@ -79,6 +80,7 @@ const SkillStyle = styled.section`
     /* background-color: red; */
   }
 
+
   @media screen and (max-width: 800px) {
     align-items: center;
 
@@ -92,8 +94,8 @@ const SkillStyle = styled.section`
 export default SkillStyle;
 
 export const SkillBoxStyle = styled.div`
-  width: 100px;
-  height: 100px;
+  width: 110px;
+  /* height: 80px; */
   background-color: var(--bg-blue);
   border-radius: 30px;
   padding: 25px;
@@ -104,16 +106,13 @@ export const SkillBoxStyle = styled.div`
   align-items: center;
   color: ${({ lightMode }) => (!lightMode ? "var(--bg-light)" : "var(--dark)")};
 
-  img {
+  .icon {
     width: 35px;
     aspect-ratio: 1/1;
   }
 
   @media screen and (max-width: 800px) {
-    width: 80px;
-    height: 80px;
-
-    img {
+    .icon {
       width: 25px;
     }
   }
@@ -123,7 +122,7 @@ export const SkillBoxStyle = styled.div`
     width: max-content;
     padding: 10px 15px;
 
-    img {
+    .icon {
       width: 20px;
     }
   }

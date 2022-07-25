@@ -139,6 +139,7 @@ export const Heading = styled.div`
   gap: 5px;
   margin-bottom: 30px;
   font-weight: 1000;
+  transform: skew(8deg);
 
   @media screen and (max-width: 800px) {
     align-self: center;

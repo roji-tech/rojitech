@@ -1,9 +1,9 @@
 import { SkillBoxStyle } from "./skillStyle";
 
-const SkillBox = ({ text, imgSrc }) => {
+const SkillBox = ({ text, imgSrc, icon }) => {
   return (
     <SkillBoxStyle>
-      <img src={imgSrc} alt="" />
+      {icon ? icon : <img src={imgSrc} className="icon" alt="" />}
       <p> {text} </p>
     </SkillBoxStyle>
   );
