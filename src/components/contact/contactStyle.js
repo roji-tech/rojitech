@@ -73,7 +73,7 @@ export const ContactWrap = styled.section`
 `;
 
 export const ContactBoxStyle = styled.div`
-  color: var(--bg-white);
+  color: ${({ lightMode }) => (!lightMode ? "var(--bg-blue)" : "var(--bg-white)")};
   font-weight: 1000;
   font-size: 0.8em;
   width: 100px;
@@ -85,6 +85,7 @@ export const ContactBoxStyle = styled.div`
   padding: 15px;
   gap: 6px;
   border-radius: 50%;
-  background-color: var(--bg-light);
+  background-color: ${({ lightMode }) =>
+    !lightMode ? "var(--bg-light)" : "var(--dark)"};
   cursor: pointer;
 `;

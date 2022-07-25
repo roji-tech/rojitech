@@ -9,10 +9,12 @@ import {
   FaTwitter,
   FaGithub,
 } from "react-icons/fa";
+import LightModeFunc from "../../Context";
 
 const Contact = () => {
+  const { lightMode } = LightModeFunc();
   let size = 30;
-  let color = "var(--bg-white)";
+  let color = !lightMode ? "var(--bg-blue)" : " var(--blue)";
   let mySocials = [
     {
       id: 1,
@@ -47,7 +49,7 @@ const Contact = () => {
   ];
 
   return (
-    <ContactWrap id="contact">
+    <ContactWrap lightMode={lightMode} id="contact">
       <Heading>
         <h1>Contact Me</h1>
         <UnderStroke />
@@ -56,7 +58,7 @@ const Contact = () => {
       <div className="contact">
         <div className="socials">
           {mySocials.map(({ id, text, icon, link }) => (
-              <ContactBox key={id} icon={icon} link={link} text={text} />
+            <ContactBox key={id} icon={icon} link={link} text={text} />
           ))}
         </div>
         <form>
@@ -75,7 +77,7 @@ const Contact = () => {
             name="message"
             id="message"
             placeholder="Message"
-            rows="4"
+            rows="6"
           ></textarea>
 
           <button>Send</button>
