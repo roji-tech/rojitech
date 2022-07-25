@@ -21,20 +21,50 @@ const Banner = () => {
         <p className="hi">Hello I'm</p>
         <p className="name"> ABDULLAH JAMIU</p>
         <p className="stack">Full Stack Developer</p>
-        <small className="langs">
-          Python Django Javascript ReactJS NextJS
-        </small>
+        <small className="langs">Python Django Javascript ReactJS NextJS</small>
         <small>
           Passionate about programming and always willing to learn more.
         </small>
 
         <div className="socials">
-          <FaTwitter color={color} className="social" size={30} />
-          <FaLinkedinIn color={color} size={30} className="social" />
-          <FaWhatsapp color={color} size={30} className="social" />
-          <FaTelegramPlane color={color} size={30} className="social" />
-          <FiMail color={color} size={30} className="social" />
-          <FaGithub color={color} size={30} className="social" />
+          <a
+            href="https://twitter.com/Rojitech_code?t=F2ILVDjYghsYP_luZA1SvQ&s=09"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FaTwitter color={color} className="social" size={30} />
+          </a>
+          <a
+            href="https://www.linkedin.com/in/abdullah-jamiu-660902225"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FaLinkedinIn color={color} size={30} className="social" />
+          </a>
+          <a
+            href="https://wa.me/+2347015910956"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FaWhatsapp color={color} size={30} className="social" />
+          </a>
+          <a
+            href="https://t.me/Rojitech"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FaTelegramPlane color={color} size={30} className="social" />
+          </a>
+          <a href="mailto:abdullahjamiu4@gmail.com">
+            <FiMail color={color} size={30} className="social" />
+          </a>
+          <a
+            href="https://github.com/roji-tech"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FaGithub color={color} size={30} className="social" />
+          </a>
         </div>
         <Button text="Download Resume" />
       </div>
