@@ -30,7 +30,7 @@ const SkillStyle = styled.section`
 
       .small {
         margin-left: 15px;
-        color: var(--bg-white);
+        color: var(--bg-blue);
         font-weight: 1000;
         padding: 6px 20px;
         border-radius: 30px;
@@ -96,15 +96,35 @@ export const SkillBoxStyle = styled.div`
   height: 100px;
   background-color: var(--bg-blue);
   border-radius: 30px;
-  padding: 30px;
+  padding: 25px;
   display: flex;
   flex-direction: column;
   gap: 5px;
   justify-content: center;
   align-items: center;
+  color: ${({ lightMode }) => (!lightMode ? "var(--bg-light)" : "var(--dark)")};
 
   img {
     width: 35px;
     aspect-ratio: 1/1;
+  }
+
+  @media screen and (max-width: 800px) {
+    width: 80px;
+    height: 80px;
+
+    img {
+      width: 25px;
+    }
+  }
+  @media screen and (max-width: 500px) {
+    flex-direction: row;
+    height: max-content;
+    width: max-content;
+    padding: 10px 15px;
+
+    img {
+      width: 20px;
+    }
   }
 `;
