@@ -7,14 +7,13 @@ export const ProjectStyle = styled.section`
   /* justify-content: center;
   align-items: center; */
 
-
   .projects {
     gap: 2em;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    margin: 5% 10%;
-    @media screen and (max-width: 800px) {
+    margin: 5% 2%;
+    @media screen and (max-width: 1000px) {
     }
   }
 
@@ -23,7 +22,7 @@ export const ProjectStyle = styled.section`
     justify-content: end;
 
     .morePro {
-      font-size: .8rem;
+      font-size: 0.8rem;
       border-radius: 20px;
       text-decoration: none;
       padding: 10px;
@@ -39,8 +38,8 @@ export const ProjectStyle = styled.section`
 `;
 
 export const ProjectBoxStyle = styled.div`
-  width: 400px;
-  height: 450px;
+  width: 360px;
+  height: 420px;
   border-top-left-radius: 30px;
   border-top-right-radius: 30px;
   padding: 10px 15px;
