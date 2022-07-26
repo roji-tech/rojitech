@@ -60,6 +60,7 @@ const GlobalStyle = createGlobalStyle`
     background-image: ${({ lightMode }) =>
       !lightMode ? `url(${bgImage})` : "none"};
     width: 99.95%;
+    font-size: 1.1rem;
 
     
     
@@ -86,7 +87,7 @@ const GlobalStyle = createGlobalStyle`
 
   section{
     width: var(--lg-width);
-    padding: 20% 0;
+    padding: 10% 0;
     
     @media screen and (max-width: 1125px) {
       width: var(--md-width);
@@ -139,7 +140,7 @@ export const Heading = styled.div`
   gap: 5px;
   margin-bottom: 30px;
   font-weight: 1000;
-  transform: skew(8deg);
+  /* transform: skew(2deg); */
 
   @media screen and (max-width: 800px) {
     align-self: center;

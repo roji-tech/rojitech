@@ -2,7 +2,6 @@ import styled from "styled-components";
 
 const CubeSpinnerStyle = styled.div`
   --anim-width: ${({ a_width }) => (a_width ? a_width : "100px")};
-
   position: relative;
 
   width: 100%;
@@ -28,10 +27,10 @@ const CubeSpinnerStyle = styled.div`
     animation-duration: 12s;
     transform-style: preserve-3d;
     /* transform-origin: 50px 50px 30px; */
-    margin-left: calc(50% - 100px);
+    margin-left: calc(50%);
 
     @media screen and (min-width: 1600px) {
-      margin-left: calc(50% - 250px);
+      margin-left: calc(50%);
     }
 
     @media screen and (max-width: 800px) {
