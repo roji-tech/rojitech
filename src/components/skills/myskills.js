@@ -10,7 +10,13 @@ import {
 } from "react-icons/fa";
 
 import { CgCPlusPlus } from "react-icons/cg";
-import { SiTypescript, SiDjango, SiRedux, SiJavascript, SiNextdotjs } from "react-icons/si";
+import {
+  SiTypescript,
+  SiDjango,
+  SiRedux,
+  SiJavascript,
+  SiNextdotjs,
+} from "react-icons/si";
 import { AiOutlineConsoleSql } from "react-icons/ai";
 
 const size = 25;
@@ -73,11 +79,11 @@ export const basic = [
     icon: <CgCPlusPlus color="#659ad2" size={size} />,
   },
   {
-    text: "Wordpress",
-    icon: <FaWordpress color="#21759b" size={size} />,
-  },
-  {
     text: "Java",
     icon: <FaJava color="#f89820" size={size} />,
+  },
+  {
+    text: "Wordpress",
+    icon: <FaWordpress color="#21759b" size={size} />,
   },
 ];
