@@ -98,7 +98,7 @@ export const SkillBoxStyle = styled.div`
   /* height: 80px; */
   background-color: var(--bg-blue);
   border-radius: 30px;
-  padding: 25px;
+  padding: 10px 25px;
   display: flex;
   flex-direction: column;
   gap: 5px;
