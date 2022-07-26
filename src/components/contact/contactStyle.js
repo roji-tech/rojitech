@@ -46,7 +46,7 @@ export const ContactWrap = styled.section`
       background-color: var(--blue);
       padding: 8%;
       gap: 5%;
-      
+
       input,
       textarea {
         margin: 15px 0;
@@ -74,7 +74,7 @@ export const ContactWrap = styled.section`
 `;
 
 export const ContactBoxStyle = styled.div`
-  color: ${({ lightMode }) => (!lightMode ? "var(--bg-blue)" : "var(--bg-white)")};
+  color: var(--white);
   font-weight: 1000;
   font-size: 0.8em;
   width: 100px;
@@ -89,4 +89,9 @@ export const ContactBoxStyle = styled.div`
   background-color: ${({ lightMode }) =>
     !lightMode ? "var(--bg-light)" : "var(--dark)"};
   cursor: pointer;
+
+  background-image: linear-gradient(
+    ${({ lightMode }) => (!lightMode ? "var(--bg-light)" : "var(--dark)")} 50%,
+    var(--bg-blue) 60%
+  );
 `;
