@@ -57,6 +57,7 @@ const SkillStyle = styled.section`
 
       div.stack {
         display: flex;
+        align-items: center;
         flex-direction: column;
         gap: 30px;
 
@@ -69,6 +70,10 @@ const SkillStyle = styled.section`
           justify-content: space-evenly;
           flex-wrap: wrap;
           gap: 20px;
+
+          @media screen and (min-width: 800px) {
+            padding:0 50px
+          }
 
           @media screen and (max-width: 500px) {
             justify-content: center;
@@ -119,7 +124,6 @@ export const SkillBoxStyle = styled.div`
       width: 25px;
     }
   }
-
 
   /* @media screen and (max-width: 500px) {
     flex-direction: row;
