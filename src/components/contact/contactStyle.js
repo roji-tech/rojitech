@@ -46,16 +46,17 @@ export const ContactWrap = styled.section`
       background-color: var(--blue);
       padding: 8%;
       gap: 5%;
-
+      
       input,
       textarea {
-        margin: 20px 0;
+        margin: 15px 0;
         border-radius: 5px;
         background-color: var(--bg-light);
         width: 100%;
         resize: none;
-        padding: 20px;
+        padding: 12px;
         outline: none;
+        font-size: 1.1rem;
       }
 
       button {
