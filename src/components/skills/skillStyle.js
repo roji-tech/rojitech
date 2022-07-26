@@ -72,7 +72,7 @@ const SkillStyle = styled.section`
           gap: 20px;
 
           @media screen and (min-width: 800px) {
-            padding:0 50px
+            padding: 0 50px;
           }
 
           @media screen and (max-width: 500px) {
@@ -104,7 +104,11 @@ export default SkillStyle;
 export const SkillBoxStyle = styled.div`
   width: 110px;
   /* height: 80px; */
-  background-color: var(--bg-blue);
+  background-image: radial-gradient(
+    var(--bg-blue) 40%,
+    var(--dark-trans) 10%,
+    var(--bg-blue) 50%
+  );
   border-radius: 22px;
   padding: 6px 20px;
   display: flex;
