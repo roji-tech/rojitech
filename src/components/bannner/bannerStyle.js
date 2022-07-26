@@ -16,7 +16,6 @@ const BannerStyle = styled.main`
     width: var(--sm-width);
   }
 
-
   .rojitech {
     position: absolute;
     font-size: 2em;
@@ -93,6 +92,18 @@ const BannerStyle = styled.main`
       }
     }
 
+    #myBtns {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      gap: 10px;
+
+      @media screen and (max-width: 800px) {
+        flex-direction: column;
+        padding: 15px 0;
+      }
+    }
+
     @media screen and (max-width: 800px) {
       padding: 20% 0 20%;
       align-items: center;
@@ -114,9 +125,9 @@ const BannerStyle = styled.main`
         margin-bottom: 10px;
       }
 
-      button {
+      /* button {
         margin: 20px 0 0;
-      }
+      } */
 
       p {
       }

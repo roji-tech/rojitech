@@ -16,6 +16,18 @@ export const FooterWrapper = styled.footer`
     font-weight: 1000;
   }
 
+  #myBtns {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 10px;
+
+    @media screen and (max-width: 800px) {
+      flex-direction: column;
+      padding: 15px 0;
+    }
+  }
+
   @media screen and (max-width: 800px) {
     padding: 12% 0;
   }

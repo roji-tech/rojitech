@@ -11,11 +11,14 @@ const Footer = () => {
     <FooterWrapper lightMode={lightMode}>
       <p className="name">ABDULLAH JAMIU</p>
       <Social j_content="center" />
-      <Button
-        fontSize="larger"
-        bgColor={"var(--bg-light)"}
-        text={"Get Resume"}
-      />
+      <div id="myBtns">
+        <Button
+          fontSize="larger"
+          bgColor={"var(--bg-light)"}
+          text={"Get Resume"}
+        />
+        <Button fontSize="larger" bgColor={"var(--bg-light)"} text="Hire Me" />
+      </div>
       <p>Thank You</p>
     </FooterWrapper>
   );

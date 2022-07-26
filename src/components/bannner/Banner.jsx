@@ -17,7 +17,7 @@ const Banner = () => {
   return (
     <BannerStyle lightMode={lightMode} id="top">
       {/* <p className="satisfy custom-3D-title rojitech">ROJITECH</p> */}
-      <div>
+      <div className="first">
         <p className="hi">Hello I'm</p>
         <p className="name"> ABDULLAH JAMIU</p>
         <p className="stack">Full Stack Developer</p>
@@ -66,9 +66,12 @@ const Banner = () => {
             <FaGithub color={color} size={30} className="social" />
           </a>
         </div>
-        <Button text="Download Resume" />
+        <div id="myBtns">
+          <Button fontSize={"15px"} text="Download Resume" />
+          <Button text="Hire Me" />
+        </div>
       </div>
-      <div className="cube">
+      <div className="second cube">
         <CubeSpin a_width={"100px"} />
       </div>
     </BannerStyle>

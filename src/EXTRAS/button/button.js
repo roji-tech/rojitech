@@ -86,6 +86,7 @@ export const ButtonStyle = styled.button`
 
   span {
     font-weight: 1000;
+    white-space: nowrap;
   }
 
   @keyframes btnAnim {
