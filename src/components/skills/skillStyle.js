@@ -66,7 +66,7 @@ const SkillStyle = styled.section`
 
         div.lang {
           display: flex;
-          justify-content: space-between;
+          justify-content: space-evenly;
           flex-wrap: wrap;
           gap: 20px;
 
@@ -100,11 +100,11 @@ export const SkillBoxStyle = styled.div`
   width: 110px;
   /* height: 80px; */
   background-color: var(--bg-blue);
-  border-radius: 30px;
-  padding: 10px 20px;
+  border-radius: 22px;
+  padding: 6px 20px;
   display: flex;
   flex-direction: column;
-  gap: 5px;
+  gap: 3px;
   justify-content: center;
   align-items: center;
   color: ${({ lightMode }) => (!lightMode ? "var(--bg-light)" : "var(--dark)")};
@@ -119,7 +119,9 @@ export const SkillBoxStyle = styled.div`
       width: 25px;
     }
   }
-  @media screen and (max-width: 500px) {
+
+
+  /* @media screen and (max-width: 500px) {
     flex-direction: row;
     height: max-content;
     width: max-content;
@@ -128,5 +130,5 @@ export const SkillBoxStyle = styled.div`
     .icon {
       width: 20px;
     }
-  }
+  } */
 `;
