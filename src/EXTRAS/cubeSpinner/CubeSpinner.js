@@ -44,7 +44,7 @@ const CubeSpinnerStyle = styled.div`
       aspect-ratio: 1/1;
       border: 1px solid #ccc;
       background: ${({ lightMode }) =>
-        !lightMode ? "rgba(255, 255, 255, 0.4)" : "var(--dark)"};
+        !lightMode ? "rgba(255, 255, 255, 0.4)" : "var(--dark-trans)"};
       text-align: center;
       font-size: 100px;
       display: flex;

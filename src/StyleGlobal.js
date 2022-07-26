@@ -32,6 +32,7 @@ const GlobalStyle = createGlobalStyle`
   
   /* DarkMode */
   --dark: 	#1f1f38;
+  --dark-trans: 	#1f1f3880;
   --bg-blue: 	#2c2c6c;
   --white:  rgba(255, 255, 255, 0.8);
 
