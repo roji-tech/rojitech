@@ -21,7 +21,7 @@ const About = () => {
         <p>
           &nbsp;&nbsp;&nbsp;&nbsp; I've been able to build and equip myself with
           full-stack technologies to enable me stand out in the tech industry
-          and be able to contribute to it positively.
+          and be able to contribute positively.
         </p>
       </div>
     </AboutWrap>

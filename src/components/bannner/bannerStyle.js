@@ -57,7 +57,7 @@ const BannerStyle = styled.main`
     }
 
     .name {
-      font-size: 1.5em;
+      font-size: 1.9em;
       font-weight: bold;
     }
 
@@ -117,19 +117,21 @@ const BannerStyle = styled.main`
       }
 
       .stack {
-        /* color: var(--bg-white); */
-        font-size: 1.4em;
+        font-size: 1.3em;
+      }
+
+      .name {
+        font-size: 1.6em;
       }
 
       p {
+        text-align: center;
         margin-bottom: 10px;
       }
 
-      /* button {
-        margin: 20px 0 0;
-      } */
-
-      p {
+      small {
+        text-align: center;
+        margin-top: 10px;
       }
 
       .socials {

@@ -21,11 +21,11 @@
     },
     {
         "id": 3,
-        "appname": "Piggyvest Website Clone",
+        "appname": "Piggyvest Landing Page Clone",
         "LDlink": "https://week1-piggyvest.netlify.app/",
         "GHlink": "https://github.com/Portfolio-React-Team-2/week1-piggyvest",
         "langs": "React",
-        "desc": "A Piggyvest Website Clone created with reactjs",
+        "desc": "A Piggyvest Landing Page Clone created with reactjs",
         "imgSrc": "piggy.png",
         "top": true
     },
