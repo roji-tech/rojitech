@@ -105,9 +105,9 @@ export const SkillBoxStyle = styled.div`
   width: 110px;
   /* height: 80px; */
   background-image: radial-gradient(
-    var(--bg-blue) 40%,
+    var(--bg-blue) 20%,
     var(--dark-trans) 10%,
-    var(--bg-blue) 50%
+    var(--bg-blue) 40%
   );
   border-radius: 22px;
   padding: 6px 20px;
