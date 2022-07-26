@@ -48,10 +48,6 @@ const SkillStyle = styled.section`
       justify-content: center;
       gap: 40px;
       padding-bottom: 50px;
-
-      @media screen and (max-width: 500px) {
-        justify-content: center;
-      }
     }
 
     .box.advanced {
@@ -70,9 +66,13 @@ const SkillStyle = styled.section`
 
         div.lang {
           display: flex;
-          justify-content: space-around;
+          justify-content: space-between;
           flex-wrap: wrap;
           gap: 20px;
+
+          @media screen and (max-width: 500px) {
+            justify-content: center;
+          }
         }
       }
     }
