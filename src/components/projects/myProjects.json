@@ -46,7 +46,7 @@
         "GHlink": "https://github.com/Portfolio-React-Team-2/week4-url-shortner",
         "langs": "React Django Django Rest Framework",
         "desc": "A React Url shortner consuming a django backend",
-        "imgSrc": "",
+        "imgSrc": "shortner.png",
         "top": true
     },
     {
@@ -56,7 +56,7 @@
         "GHlink": "https://github.com/Portfolio-React-Team-2/django-url-shortner-api",
         "langs": "Django Django Rest Framework",
         "desc": "A Url Shortner API consumes by a React Frontend",
-        "imgSrc": "",
+        "imgSrc": "url-api.png",
         "top": true
     },
     {
