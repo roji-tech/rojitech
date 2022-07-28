@@ -1,5 +1,5 @@
 import LightModeFunc from "../../Context";
-import AllProjectStyle from "./AllProjects";
+import AllProjectStyle from "./AllProjectStyle";
 import ProjectBox from "../../components/projects/ProjectBox";
 import { Heading } from "../../StyleGlobal";
 import UnderStroke from "../../EXTRAS/UnderStroke/UnderStroke";
