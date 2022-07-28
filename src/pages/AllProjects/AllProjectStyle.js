@@ -12,6 +12,10 @@ const AllProjectStyle = styled.section`
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    .langs {
+      font-size: 1.1rem;
+    }
   }
 
   .wrapper {

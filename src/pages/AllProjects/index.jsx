@@ -12,7 +12,7 @@ const AllProjects = () => {
     <AllProjectStyle lightMode={lightMode}>
       <div className="head">
         <h1>ABDULLAH JAMIU</h1>
-        <small className="langs">Python Django Javascript ReactJS NextJS</small>
+        <small className="langs">Python Django ||| Javascript ReactJS NextJS</small>
       </div>
 
       <div className="wrapper">
