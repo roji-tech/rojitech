@@ -27,7 +27,7 @@
         "langs": "React",
         "desc": "A Piggyvest Landing Page Clone created with reactjs",
         "imgSrc": "piggy.png",
-        "top": true
+        "top": false
     },
     {
         "id": 4,
@@ -41,6 +41,26 @@
     },
     {
         "id": 5,
+        "appname": "Url Shortner",
+        "LDlink": "https://ultimate-url-shortner.vercel.app/",
+        "GHlink": "https://github.com/Portfolio-React-Team-2/week4-url-shortner",
+        "langs": "React Django Django Rest Framework",
+        "desc": "A React Url shortner consuming a django backend",
+        "imgSrc": "",
+        "top": true
+    },
+    {
+        "id": 6,
+        "appname": "Url Shortner API",
+        "LDlink": "https://portfolio-shortner.herokuapp.com/api/shortner/",
+        "GHlink": "https://github.com/Portfolio-React-Team-2/django-url-shortner-api",
+        "langs": "Django Django Rest Framework",
+        "desc": "A Url Shortner API consumes by a React Frontend",
+        "imgSrc": "",
+        "top": true
+    },
+    {
+        "id": 7,
         "appname": "",
         "LDlink": "",
         "GHlink": "",
