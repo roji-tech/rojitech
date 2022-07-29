@@ -36,7 +36,7 @@
         "GHlink": "https://github.com/roji-tech/django-full-eccomerce-api",
         "langs": "Django, Django-Rest-Framework",
         "desc": "A Full Featured Store API with full CRUD funtionality ranging from viewing products, making orders,adding items to cart and more.",
-        "imgSrc": "",
+        "imgSrc": "store-api.png",
         "top": true
     },
     {
