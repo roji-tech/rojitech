@@ -14,7 +14,7 @@
         "appname": "Quiz App",
         "LDlink": "https://week5-quiz-app.netlify.app/",
         "GHlink": "https://github.com/Portfolio-React-Team-2/week5-quiz-app",
-        "langs": "Javascript React",
+        "langs": "Javascript, React",
         "desc": "A Quiz app with a timer feature and listing of high scores",
         "imgSrc": "quiz.png",
         "top": true
@@ -32,9 +32,9 @@
     {
         "id": 4,
         "appname": "Full Featured Store API",
-        "LDlink": "",
-        "GHlink": "",
-        "langs": "Django Django-Rest-Framework",
+        "LDlink": "https://my-store-pro.herokuapp.com/",
+        "GHlink": "https://github.com/roji-tech/django-full-eccomerce-api",
+        "langs": "Django, Django-Rest-Framework",
         "desc": "A Full Featured Store API with full CRUD funtionality ranging from viewing products, making orders,adding items to cart and more.",
         "imgSrc": "",
         "top": true
@@ -44,7 +44,7 @@
         "appname": "Url Shortner",
         "LDlink": "https://ultimate-url-shortner.vercel.app/",
         "GHlink": "https://github.com/Portfolio-React-Team-2/week4-url-shortner",
-        "langs": "React Django Django Rest Framework",
+        "langs": "React, Django Django-Rest-Framework",
         "desc": "A React Url shortner consuming a django backend",
         "imgSrc": "shortner.png",
         "top": true
@@ -54,7 +54,7 @@
         "appname": "Url Shortner API",
         "LDlink": "https://portfolio-shortner.herokuapp.com/api/shortner/",
         "GHlink": "https://github.com/Portfolio-React-Team-2/django-url-shortner-api",
-        "langs": "Django Django Rest Framework",
+        "langs": "Django Django-Rest-Framework",
         "desc": "A Url Shortner API consumes by a React Frontend",
         "imgSrc": "url-api.png",
         "top": true

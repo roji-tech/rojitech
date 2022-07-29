@@ -48,6 +48,8 @@ export const ProjectBoxStyle = styled.div`
 
   .appname {
     text-align: center;
+    color: white;
+    font-weight: 900;
   }
 
   .imgBox {
@@ -61,14 +63,16 @@ export const ProjectBoxStyle = styled.div`
   }
 
   .desc {
-    margin-top: 3px;
+    margin-top: 5px;
+    font-size: 1.2rem;
   }
 
   .langs {
     text-align: center;
     margin-top: 3px;
     padding-top: 3px;
-    color: var(--blue);
+    color: rgb(255, 255, 255);
+    font-weight: 800;
   }
 
   .links {
