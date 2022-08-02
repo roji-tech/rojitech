@@ -1,7 +1,8 @@
 import React from "react";
 import { ButtonStyle } from "./button";
+import file from "../../ABDULLAH JAMIU'S CV.pdf";
 
-const Button = ({ text, fontSize, color, bgColor }) => {
+const Button = ({ text, link, fontSize, color, bgColor }) => {
   return (
     <ButtonStyle
       className="button btn-3d"
@@ -11,7 +12,9 @@ const Button = ({ text, fontSize, color, bgColor }) => {
         backgroundColor: bgColor,
       }}
     >
-      <span>{text}</span>
+      <a href={link}>
+        <span>{text}</span>
+      </a>
     </ButtonStyle>
   );
 };

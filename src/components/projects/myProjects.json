@@ -61,12 +61,32 @@
     },
     {
         "id": 7,
-        "appname": "",
-        "LDlink": "",
-        "GHlink": "",
-        "langs": "",
-        "desc": "",
-        "imgSrc": "",
+        "appname": "Django Url Shortner",
+        "LDlink": "https://awesome-urlshortner.herokuapp.com/",
+        "GHlink": "https://awesome-urlshortner.herokuapp.com/",
+        "langs": "Django, AJAX",
+        "desc": "Django Url Shortner with AJAX, ( No Refresh )",
+        "imgSrc": "dj-url.png",
+        "top": false
+    },
+    {
+        "id": 8,
+        "appname": "Django Url Shortner",
+        "LDlink": "https://awesome-urlshortner.herokuapp.com/",
+        "GHlink": "https://awesome-urlshortner.herokuapp.com/",
+        "langs": "Django, AJAX",
+        "desc": "Django Url Shortner with AJAX, ( No Refresh )",
+        "imgSrc": "dj-url.png",
+        "top": false
+    },
+    {
+        "id": 9,
+        "appname": "Django Url Shortner",
+        "LDlink": "https://awesome-urlshortner.herokuapp.com/",
+        "GHlink": "https://awesome-urlshortner.herokuapp.com/",
+        "langs": "Django, AJAX",
+        "desc": "Django Url Shortner with AJAX, ( No Refresh )",
+        "imgSrc": "dj-url.png",
         "top": false
     }
 ]

@@ -17,7 +17,7 @@ const Footer = () => {
           bgColor={"var(--bg-light)"}
           text={"Get Resume"}
         />
-        <Button fontSize="larger" bgColor={"var(--bg-light)"} text="Hire Me" />
+        <Button link={""} fontSize="larger" bgColor={"var(--bg-light)"} text="Hire Me" />
       </div>
       <p>Thank You</p>
     </FooterWrapper>
