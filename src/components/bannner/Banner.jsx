@@ -68,7 +68,7 @@ const Banner = () => {
           </a>
         </div>
         <div id="myBtns">
-          <a href={file} download="ABDULLAH JAMIU's CV.pdf">
+          <a href={file} download="ABDULLAH_JAMIU's CV.pdf">
             <Button fontSize={"15px"} text="Download Resume" />
           </a>
           <a href={"#contact"}>

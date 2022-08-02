@@ -13,7 +13,7 @@ const Footer = () => {
       <p className="name">ABDULLAH JAMIU</p>
       <Social j_content="center" />
       <div id="myBtns">
-        <a href={file} download="ABDULLAH JAMIU's CV.pdf">
+        <a href={file} download="ABDULLAH_JAMIU's CV.pdf">
           <Button
             fontSize="larger"
             bgColor={"var(--bg-light)"}
