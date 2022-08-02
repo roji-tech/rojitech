@@ -10,6 +10,7 @@ import {
 import { FiMail } from "react-icons/fi";
 import Button from "../../EXTRAS/button/Button";
 import LightModeFunc from "../../Context";
+import file from "../../cv.pdf";
 
 const Banner = () => {
   const { lightMode } = LightModeFunc();
@@ -67,8 +68,12 @@ const Banner = () => {
           </a>
         </div>
         <div id="myBtns">
-          <Button fontSize={"15px"} text="Download Resume" />
-          <Button text="Hire Me" />
+          <a href={file} download="ABDULLAH JAMIU's CV.pdf">
+            <Button fontSize={"15px"} text="Download Resume" />
+          </a>
+          <a href={"#contact"}>
+            <Button text="Hire Me" />
+          </a>
         </div>
       </div>
       <div className="second cube">

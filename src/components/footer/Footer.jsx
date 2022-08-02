@@ -3,6 +3,7 @@ import Social from "../../EXTRAS/social/Social";
 import Button from "../../EXTRAS/button/Button";
 import { FooterWrapper } from "./footerStyle";
 import LightModeFunc from "../../Context";
+import file from "../../cv.pdf";
 
 const Footer = () => {
   const { lightMode } = LightModeFunc();
@@ -12,12 +13,20 @@ const Footer = () => {
       <p className="name">ABDULLAH JAMIU</p>
       <Social j_content="center" />
       <div id="myBtns">
-        <Button
-          fontSize="larger"
-          bgColor={"var(--bg-light)"}
-          text={"Get Resume"}
-        />
-        <Button link={""} fontSize="larger" bgColor={"var(--bg-light)"} text="Hire Me" />
+        <a href={file} download="ABDULLAH JAMIU's CV.pdf">
+          <Button
+            fontSize="larger"
+            bgColor={"var(--bg-light)"}
+            text={"Get Resume"}
+          />
+        </a>
+        <a href={"#contact"}>
+          <Button
+            fontSize="larger"
+            bgColor={"var(--bg-light)"}
+            text="Hire Me"
+          />
+        </a>
       </div>
       <p>Thank You</p>
     </FooterWrapper>
