@@ -1,6 +1,6 @@
 import React from "react";
 import { ButtonStyle } from "./button";
-import file from "../../ABDULLAH JAMIU'S CV.pdf";
+// import file from "../../ABDULLAH JAMIU'S CV.pdf";
 
 const Button = ({ text, link, fontSize, color, bgColor }) => {
   return (
@@ -12,9 +12,9 @@ const Button = ({ text, link, fontSize, color, bgColor }) => {
         backgroundColor: bgColor,
       }}
     >
-      <a href={link}>
+      {/* <a href={link}> */}
         <span>{text}</span>
-      </a>
+      {/* </a> */}
     </ButtonStyle>
   );
 };
