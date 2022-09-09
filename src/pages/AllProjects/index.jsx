@@ -12,7 +12,9 @@ const AllProjects = () => {
     <AllProjectStyle lightMode={lightMode}>
       <div className="head">
         <h1>ABDULLAH JAMIU</h1>
-        <small className="langs">Python Django ||| Javascript ReactJS NextJS</small>
+        <small className="langs">
+          Python Django ||| Javascript ReactJS NextJS
+        </small>
       </div>
 
       <div className="wrapper">
@@ -23,9 +25,9 @@ const AllProjects = () => {
 
         <ul className="projects">
           {myProjects.map(
-            ({ id, appname, LDlink, imgSrc, desc, GHlink, langs }) => (
+            ({ appname, LDlink, imgSrc, desc, GHlink, langs }) => (
               <ProjectBox
-                key={id}
+                key={imgSrc}
                 imgSrc={require(`../../IMGS/${imgSrc ? imgSrc : "redux.png"}`)}
                 GHlink={GHlink}
                 LDlink={LDlink}

@@ -19,9 +19,9 @@ const Projects = () => {
       <ul className="projects">
         {myProjects
           .filter((project) => project["top"] === true)
-          .map(({ id, appname, LDlink, imgSrc, desc, GHlink, langs }) => (
+          .map(({ appname, LDlink, imgSrc, desc, GHlink, langs }) => (
             <ProjectBox
-              key={id}
+              key={imgSrc}
               imgSrc={require(`../../IMGS/${imgSrc ? imgSrc : "redux.png"}`)}
               GHlink={GHlink}
               LDlink={LDlink}
