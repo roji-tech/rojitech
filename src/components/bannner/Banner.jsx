@@ -5,7 +5,7 @@ import {
   FaLinkedinIn,
   FaWhatsapp,
   FaTelegramPlane,
-  FaGithub,
+  FaGithub
 } from "react-icons/fa";
 import { FiMail } from "react-icons/fi";
 import Button from "../../EXTRAS/button/Button";
@@ -25,6 +25,9 @@ const Banner = () => {
         <small className="langs">Python Django Javascript ReactJS NextJS</small>
         <small>
           Passionate about programming and always willing to learn more.
+        </small>
+        <small>
+          <b> Location: </b> Ondo State, Nigeria.
         </small>
 
         <div className="socials">

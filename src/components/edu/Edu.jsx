@@ -11,9 +11,10 @@ const Edu = () => {
       </Heading>
       <div className="text">
         <dd>
-          Cyber Security Student
-          <dt>Federal University of Technology Akure</dt>
-          <dl>2019 - Present Date</dl>
+          <p>Federal University of Technology Akure, Nigeria.</p>
+          <p>Bachelor of Technology</p>
+          <p>Cyber Security</p>
+          <dl>2019 - Present</dl>
         </dd>
       </div>
     </EduStyle>

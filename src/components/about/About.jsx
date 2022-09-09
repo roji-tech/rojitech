@@ -14,7 +14,7 @@ const About = () => {
       <div className="about__text">
         <p>
           &nbsp;&nbsp;&nbsp;&nbsp; I'm a Full-stack Developer and Cyber Security
-          Enthusiast with almost 2 years experience in programming, I'm
+          Enthusiast with almost 3 years experience in programming, I'm a Nigerian and I stay in Ondo State, Nigeria. I'm
           passionate about programming, and more than willing to learn more.
         </p>
         <br />

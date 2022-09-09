@@ -9,6 +9,14 @@
         "top": true
     },
     {
+        "appname": "My Portfolio Site",
+        "LDlink": "https://portfolio-roji-tech.vercel.app",
+        "langs": "ReactJS",
+        "desc": "My Portfolio Website created with ReactJS.",
+        "imgSrc": "portfolio.jpg",
+        "top": true
+    },
+    {
         "appname": "PeersApp Backend API",
         "LDlink": "https://peers-react-web-app.vercel.app/",
         "langs": "Django Django_Rest_Framework",

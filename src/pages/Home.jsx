@@ -13,10 +13,10 @@ const Home = () => {
       <Banner />
       <About />
       <Edu />
+      <Certs />
       <Skills />
       <Projects />
       {/* <CodeChallenge /> */}
-      <Certs />
       <Contact />
     </>
   );

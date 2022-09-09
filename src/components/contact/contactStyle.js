@@ -45,6 +45,7 @@ export const ContactWrap = styled.section`
       justify-content: center;
       background-color: var(--blue);
       padding: 8%;
+      border-radius: 20px;
       gap: 5%;
 
       input,
