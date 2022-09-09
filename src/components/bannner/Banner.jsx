@@ -10,7 +10,7 @@ import {
 import { FiMail } from "react-icons/fi";
 import Button from "../../EXTRAS/button/Button";
 import LightModeFunc from "../../Context";
-import file from "../../cv.pdf";
+import file from "../../ABDULLAH__JAMIU'S CV.pdf";
 
 const Banner = () => {
   const { lightMode } = LightModeFunc();

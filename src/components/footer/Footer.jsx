@@ -3,7 +3,7 @@ import Social from "../../EXTRAS/social/Social";
 import Button from "../../EXTRAS/button/Button";
 import { FooterWrapper } from "./footerStyle";
 import LightModeFunc from "../../Context";
-import file from "../../cv.pdf";
+import file from "../../ABDULLAH__JAMIU'S CV.pdf";
 
 const Footer = () => {
   const { lightMode } = LightModeFunc();
