@@ -28,6 +28,7 @@ export const CertBoxStyle = styled.div`
   margin: 10px;
   display: grid;
   grid-template-rows: 80% 20%;
+  transition: all 0.3s ease-in-out;
 
   .img {
     width: 100%;
@@ -47,6 +48,11 @@ export const CertBoxStyle = styled.div`
     padding: 5px;
     font-size: 0.9em;
     text-align: center;
+  }
+
+  :hover {
+    transform: scale(1.1);
+    box-shadow: 1px 1px 10px 1px white;
   }
 
   @media screen and (min-width: 1000px) {

@@ -117,10 +117,23 @@ export const SkillBoxStyle = styled.div`
   justify-content: center;
   align-items: center;
   color: ${({ lightMode }) => (!lightMode ? "var(--bg-light)" : "var(--dark)")};
+  user-select: none;
+  transition: all 0.3s ease-in-out;
 
   .icon {
     width: 35px;
     aspect-ratio: 1/1;
+  }
+
+  :hover {
+    background-image: radial-gradient(
+      var(--bg-blue) 10%,
+      var(--dark-trans) 60%,
+      var(--bg-blue) 30%
+    );
+    transform: scale(1.08);
+    box-shadow: 1px 1px 5px 2px
+      ${({ lightMode }) => (!lightMode ? "#ffffff93" : "var(--dark)")};
   }
 
   @media screen and (max-width: 800px) {

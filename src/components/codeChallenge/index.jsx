@@ -2,6 +2,8 @@ import React from "react";
 import CCStyles from "./CodeChallenge";
 import { Heading } from "../../StyleGlobal";
 import UnderStroke from "../../EXTRAS/UnderStroke/UnderStroke";
+import CHALLENGES from "./challenges";
+import ChallengeBox from "./ChallengeBox";
 
 const CodeChallenge = () => {
   return (
@@ -10,7 +12,11 @@ const CodeChallenge = () => {
         <h1>Coding Challenges</h1>
         <UnderStroke />
       </Heading>
-      <div></div>
+      <div className="challenges">
+        {CHALLENGES.map((challenge) => (
+          <ChallengeBox item={challenge} />
+        ))}
+      </div>
     </CCStyles>
   );
 };

@@ -69,6 +69,17 @@ export const ContactWrap = styled.section`
         color: var(--bg-white);
         font-weight: 900;
         cursor: pointer;
+        transition: all 0.2s ease-in-out;
+
+        :hover {
+          transform: scale(1.02);
+          box-shadow: 1px 1px 5px 2px
+            ${({ lightMode }) => (!lightMode ? "#ffffff93" : "var(--dark)")};
+        }
+
+        :focus {
+          filter: blur(2px);
+        }
       }
     }
   }
@@ -90,9 +101,20 @@ export const ContactBoxStyle = styled.div`
   background-color: ${({ lightMode }) =>
     !lightMode ? "var(--bg-light)" : "var(--dark)"};
   cursor: pointer;
+  transition: all 0.4s ease-in-out;
 
   background-image: linear-gradient(
     ${({ lightMode }) => (!lightMode ? "var(--bg-light)" : "var(--dark)")} 50%,
     var(--bg-blue) 60%
   );
+
+  :hover {
+    transform: scale(1.1);
+    box-shadow: 1px 1px 15px 2px
+      ${({ lightMode }) => (!lightMode ? "#ffffff93" : "var(--dark)")};
+    background-image: linear-gradient(
+      ${({ lightMode }) => (!lightMode ? "var(--bg-light)" : "var(--dark)")} 45%,
+      var(--bg-blue) 50%
+    );
+  }
 `;

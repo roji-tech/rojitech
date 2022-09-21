@@ -24,6 +24,7 @@ export const FooterWrapper = styled.footer`
 
     @media screen and (max-width: 800px) {
       flex-direction: column;
+      align-items: center;
       padding: 15px 0;
     }
   }

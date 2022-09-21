@@ -45,10 +45,16 @@ export const ProjectBoxStyle = styled.div`
   background-color: var(--bg-blue);
   display: grid;
   grid-template-rows: 1fr 5fr 3fr 1fr 1fr;
+  transition: all 0.3s ease-in-out;
+
+  :hover {
+    box-shadow: 1px 1px 10px 5px #ffffff93;
+    transform: scale(1.05);
+  }
 
   .appname {
     text-align: center;
-    color: white;
+    color: #ffffff;
     font-weight: 900;
   }
 

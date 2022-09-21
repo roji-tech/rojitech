@@ -1,5 +1,22 @@
 [
     {
+        "appname": "PeersApp Backend API",
+        "LDlink": "https://peers-react-web-app.vercel.app/",
+        "langs": "Django Django_Rest_Framework Django_Channels Websocket",
+        "desc": "A Chat App aimed at making virtual learning and communication easier to students across the world and from different educational backgrounds.",
+        "imgSrc": "peersapp.png",
+        "top": true
+    },
+    {
+        "appname": "NextJS WhatsApp Clone",
+        "LDlink": "https://nextjs-whatsapp-clone-ten.vercel.app/",
+        "GHlink": "https://github.com/roji-tech/",
+        "langs": "NextJS Firebase 9.0 Firestore",
+        "desc": "A Chat App aimed at making virtual learning and communication easier to students across the world and from different educational backgrounds.",
+        "imgSrc": "whatsapp.png",
+        "top": true
+    },
+    {
         "appname": "Full Featured Store API",
         "LDlink": "https://my-store-pro.herokuapp.com/",
         "GHlink": "https://github.com/roji-tech/django-full-eccomerce-api",
@@ -14,14 +31,6 @@
         "langs": "ReactJS",
         "desc": "My Portfolio Website created with ReactJS.",
         "imgSrc": "portfolio.jpg",
-        "top": true
-    },
-    {
-        "appname": "PeersApp Backend API",
-        "LDlink": "https://peers-react-web-app.vercel.app/",
-        "langs": "Django Django_Rest_Framework",
-        "desc": "A Chat App aimed at making virtual learning and communication easier to students across the world and from different educational backgrounds.",
-        "imgSrc": "peersapp.png",
         "top": true
     },
     {
