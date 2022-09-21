@@ -101,6 +101,7 @@ const BannerStyle = styled.main`
       @media screen and (max-width: 800px) {
         flex-direction: column;
         padding: 15px 0;
+        margin-bottom: 5vh;
       }
     }
 
@@ -111,6 +112,7 @@ const BannerStyle = styled.main`
       /* background-color: gray; */
 
       .hi {
+        margin-top: 10vh;
         font-family: satisfy;
         font-size: 1.1em;
         /* color: var(--bg-white); */

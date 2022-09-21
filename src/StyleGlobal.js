@@ -2,16 +2,9 @@ import styled, { createGlobalStyle } from "styled-components";
 import bgImage from "./IMGS/bg.png";
 
 const GlobalStyle = createGlobalStyle`
-
-  ::scrollbar {
-    height: 5px;
-    width: 10px;
-    background: #7fc6fd;
-  }
-
   ::-webkit-scrollbar {
     height: 5px;
-    width: 10px;
+    width: 8px;
     background: #7fc6fd;
   }
 
@@ -24,7 +17,7 @@ const GlobalStyle = createGlobalStyle`
   }
 
   ::-webkit-scrollbar-corner {
-    background: #000;
+    background: var(--dark);
   }
 
   html{
@@ -32,6 +25,8 @@ const GlobalStyle = createGlobalStyle`
   }
 
   :root {
+  scrollbar-color: blue var(--bg-light)!important;
+  scrollbar-width: thin !important;
   --bg-white: #fff;
   --white2: #ffffff10;
 
@@ -118,24 +113,10 @@ const GlobalStyle = createGlobalStyle`
         display: none;
       } */
 
-      ::scrollbar {
-        height: 3px;
-        width: 3px;
-        background: #7fc6fd;
-      }
-
       ::-webkit-scrollbar {
         height: 3px;
         width: 3px;
         background: #7fc6fd;
-      }
-
-       ::scrollbar-thumb {
-        background: blue;
-        border-radius: 1ex;
-        -webkit-border-radius: 1ex;
-        box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.75);
-        -webkit-box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.75);
       }
 
       ::-webkit-scrollbar-thumb {
@@ -147,10 +128,6 @@ const GlobalStyle = createGlobalStyle`
       }
 
       ::-webkit-scrollbar-corner {
-        background: #000;
-      }
-      
-      ::scrollbar-corner {
         background: #000;
       }
     }
