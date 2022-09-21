@@ -3,6 +3,30 @@ import bgImage from "./IMGS/bg.png";
 
 const GlobalStyle = createGlobalStyle`
 
+  ::scrollbar {
+    height: 5px;
+    width: 10px;
+    background: #7fc6fd;
+  }
+
+  ::-webkit-scrollbar {
+    height: 5px;
+    width: 10px;
+    background: #7fc6fd;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: blue;
+    border-radius: 1ex;
+    -webkit-border-radius: 1ex;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.75);
+  }
+
+  ::-webkit-scrollbar-corner {
+    background: #000;
+  }
+
   html{
       scroll-behavior: smooth;
   }
@@ -77,8 +101,57 @@ const GlobalStyle = createGlobalStyle`
     }
 
     @media screen and (max-width: 1025px) {
-      ::-webkit-scrollbar{
+      /* ::-webkit-scrollbar{
         display: none;
+      } */
+
+      ::-webkit-scrollbar {
+        height: 5px;
+        width: 5px;
+        background: #7fc6fd;
+      }
+    }
+
+
+    @media screen and (max-width: 600px) {
+      /* ::-webkit-scrollbar{
+        display: none;
+      } */
+
+      ::scrollbar {
+        height: 3px;
+        width: 3px;
+        background: #7fc6fd;
+      }
+
+      ::-webkit-scrollbar {
+        height: 3px;
+        width: 3px;
+        background: #7fc6fd;
+      }
+
+       ::scrollbar-thumb {
+        background: blue;
+        border-radius: 1ex;
+        -webkit-border-radius: 1ex;
+        box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.75);
+        -webkit-box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.75);
+      }
+
+      ::-webkit-scrollbar-thumb {
+        background: blue;
+        border-radius: 1ex;
+        -webkit-border-radius: 1ex;
+        box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.75);
+        -webkit-box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.75);
+      }
+
+      ::-webkit-scrollbar-corner {
+        background: #000;
+      }
+      
+      ::scrollbar-corner {
+        background: #000;
       }
     }
 
