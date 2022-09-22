@@ -19,16 +19,26 @@ export const ProjectStyle = styled.section`
   .seeMore {
     display: flex;
     justify-content: end;
+    padding-top: 10px;
 
     .morePro {
       font-size: 0.8rem;
       border-radius: 20px;
       text-decoration: none;
-      padding: 10px;
+      opacity: 0.99;
+      padding: 12px;
       background-color: ${({ lightMode }) =>
         !lightMode ? "var(--blue)" : "var(--dark)"};
       color: var(--white);
       font-style: oblique;
+      transition: all 0.2s ease-in-out;
+      font-weight: 600;
+
+      :hover {
+        opacity: 1;
+        transform: scale(1.1);
+        font-weight: 1000;
+      }
     }
   }
 

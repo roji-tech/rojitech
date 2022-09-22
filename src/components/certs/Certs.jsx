@@ -29,7 +29,7 @@ const CertList = [
 const Certs = () => {
   return (
     <CertStyle>
-      <Heading j_content={"center"}>
+      <Heading j_content={"start"}>
         <h1>Certificates</h1>
         <UnderStroke />
       </Heading>

@@ -35,7 +35,8 @@ const NavStyle = styled.nav`
       height: max-content;
       position: absolute;
       padding: 2px 5px;
-      color: ${({ lightMode }) => (!lightMode ? "var(--light)" : "var(--white)")};
+      color: ${({ lightMode }) =>
+        !lightMode ? "var(--light)" : "var(--white)"};
       top: -25px;
       left: 0;
       opacity: 0;
@@ -56,6 +57,10 @@ const NavStyle = styled.nav`
 
     @media screen and (max-width: 400px) {
       padding: 0.6rem;
+    }
+
+    @media screen and (max-width: 335px) {
+      padding: 0.4rem;
     }
   }
 

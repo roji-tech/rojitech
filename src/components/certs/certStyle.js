@@ -1,6 +1,8 @@
 import styled from "styled-components";
 
 const CertStyle = styled.section`
+  display: flex;
+  flex-direction: column;
   /* .certs {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));

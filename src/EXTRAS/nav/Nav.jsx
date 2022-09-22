@@ -18,7 +18,7 @@ const Nav = () => {
     setActive("");
     window.scrollTo({
       top: 0,
-      left: 0,
+      left: 0
     });
   };
 
@@ -47,6 +47,14 @@ const Nav = () => {
             <AiOutlineUser color={color} />
           </a>
           <a
+            href="#exp"
+            onClick={() => setActive("#exp")}
+            className={active === "#exp" ? "active" : ""}
+            data="Experience"
+          >
+            <RiServerLine color={color} />
+          </a>
+          <a
             href="#skills"
             onClick={() => setActive("#skills")}
             className={active === "#skills" ? "active" : ""}
@@ -62,14 +70,14 @@ const Nav = () => {
           >
             <RiServerLine color={color} />
           </a>
-          {/* <a
+          <a
             href="#challenge"
             onClick={() => setActive("#challenge")}
             className={active === "#challenge" ? "active" : ""}
             data="Challenge"
           >
             <BiMessageSquareDetail color={color} />
-          </a> */}
+          </a>
           <a
             href="#contact"
             onClick={() => setActive("#contact")}

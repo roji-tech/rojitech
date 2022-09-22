@@ -13,8 +13,13 @@ const About = () => {
 
       <div className="about__text">
         <p>
-          &nbsp;&nbsp;&nbsp;&nbsp; I'm a Full-stack Developer and Cyber Security
-          Enthusiast with almost 3 years experience in programming, I'm a Nigerian and I stay in Ondo State, Nigeria. I'm
+          &nbsp;&nbsp;&nbsp;&nbsp; I'm a Full-stack Django | ReactJS Developer
+          and Cyber Security Enthusiast with almost 3 years experience in
+          programming, I implement top notch attractive and resposive designs
+          and highly optimized backend, I have problem solving skills and can
+          learn new tech quickly on demand, I love animations and well matching
+          colors in websites at the same writing clean code with explanatory
+          comments. I'm a Nigerian and I stay in Ondo State, Nigeria. I'm
           passionate about programming, and more than willing to learn more.
         </p>
         <br />

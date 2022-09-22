@@ -1,9 +1,7 @@
 import {
   FaPython,
   FaCss3,
-  FaGitAlt,
   FaJsSquare,
-  FaHtml5,
   FaReact,
 } from "react-icons/fa";
 
