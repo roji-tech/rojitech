@@ -1,0 +1,78 @@
+/* Ported from the original site's src/EXTRAS/cubeSpinner (styled-components),
+   for the /previous-design page only — kept out of the current design system
+   on purpose, this is an archived-look artifact. */
+
+.wrap {
+  --anim-width: 100px;
+  position: relative;
+  width: 100%;
+  height: 220px;
+  /* The original never set this, so translateZ on the faces had no visual
+     effect and the "cube" rendered as flat stacked squares. Added so it
+     actually reads as a rotating cube, which was clearly the intent. */
+  perspective: 800px;
+}
+
+@media screen and (max-width: 800px) {
+  .wrap {
+    height: 160px;
+  }
+}
+
+.cubespinner {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  margin: 0 auto;
+  animation-name: spincube;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-duration: 12s;
+  transform-style: preserve-3d;
+}
+
+@media screen and (max-width: 800px) {
+  .cubespinner {
+    width: 140px;
+    height: 140px;
+    --anim-width: 70px;
+  }
+}
+
+.cubespinner div {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  border: 1px solid #ccc;
+  background: rgba(255, 255, 255, 0.08);
+  text-align: center;
+  font-size: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0 20px 0px lightyellow;
+}
+
+@media screen and (max-width: 800px) {
+  .cubespinner div {
+    width: 140px;
+    height: 140px;
+    font-size: 46px;
+  }
+}
+
+.face1 { transform: translateZ(var(--anim-width)); }
+.face2 { transform: rotateY(90deg) translateZ(var(--anim-width)); }
+.face3 { transform: rotateY(90deg) rotateX(90deg) translateZ(var(--anim-width)); }
+.face4 { transform: rotateY(180deg) rotateZ(90deg) translateZ(var(--anim-width)); }
+.face5 { transform: rotateY(-90deg) rotateZ(90deg) translateZ(var(--anim-width)); }
+.face6 { transform: rotateX(-90deg) translateZ(var(--anim-width)); }
+
+@keyframes spincube {
+  from, to { transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg); }
+  16% { transform: rotateY(-90deg); }
+  33% { transform: rotateY(-90deg) rotateZ(90deg); }
+  50% { transform: rotateY(-180deg) rotateZ(90deg); }
+  66% { transform: rotateY(-270deg) rotateX(90deg); }
+  83% { transform: rotateX(90deg); }
+}

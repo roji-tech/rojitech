@@ -6,6 +6,15 @@ import { featuredExperience } from "@/data/experience";
 import { projects } from "@/data/projects";
 import { skillCategories } from "@/data/skills";
 import { education, certifications } from "@/data/education";
+import CubeSpinner from "@/components/legacy/CubeSpinner";
+
+// Only the 3 certs the original site ever showed as image cards (Jobberman
+// was listed on the CV but never had a card here either).
+const certImages: Record<string, string> = {
+  "Python Certification": "/images/certs/python.png",
+  "Frontend Development (React JS)": "/images/certs/react.png",
+  "Cybersecurity Essentials": "/images/certs/cyber.png",
+};
 
 export const metadata = {
   title: "Abdullah Jamiu — Portfolio (Previous Design)",
@@ -39,7 +48,8 @@ export default function PreviousDesignPage() {
       </div>
 
       {/* Hero */}
-      <section className="mx-auto flex max-w-5xl flex-col items-start gap-4 px-6 py-16">
+      <section className="mx-auto flex max-w-5xl flex-col items-center gap-10 px-6 py-16 md:flex-row md:items-center md:justify-between">
+        <div className="flex flex-col items-start gap-4">
         <p style={{ color: blue2 }} className="text-sm">
           Hello I&apos;m
         </p>
@@ -88,6 +98,11 @@ export default function PreviousDesignPage() {
           >
             Hire Me
           </a>
+        </div>
+        </div>
+
+        <div className="w-full max-w-xs shrink-0 md:w-72">
+          <CubeSpinner />
         </div>
       </section>
 
@@ -203,20 +218,106 @@ export default function PreviousDesignPage() {
         <p style={{ color: blue2 }}>{education.start} - {education.end}</p>
 
         <h3 className="mt-8 mb-3 text-lg font-semibold text-white">Certificates</h3>
-        <div className="flex flex-wrap gap-3">
-          {certifications.map((c) => (
-            <span key={c.name} className="rounded-full px-3 py-1 text-xs" style={{ border: `1px solid ${blue1}` }}>
-              {c.name} · {c.issuer}
-            </span>
-          ))}
+        <div className="flex flex-wrap gap-4">
+          {certifications.map((c) =>
+            certImages[c.name] ? (
+              <div
+                key={c.name}
+                className="w-40 overflow-hidden rounded-xl"
+                style={{ background: card }}
+              >
+                <div className="relative aspect-[4/3] w-full bg-white">
+                  <Image
+                    src={certImages[c.name]}
+                    alt={c.name}
+                    fill
+                    className="object-contain p-1"
+                  />
+                </div>
+                <div className="p-2 text-center text-xs">
+                  <p className="font-medium text-white">{c.name}</p>
+                  <p style={{ color: blue2 }}>{c.issuer}</p>
+                </div>
+              </div>
+            ) : (
+              <span
+                key={c.name}
+                className="h-fit rounded-full px-3 py-1 text-xs"
+                style={{ border: `1px solid ${blue1}` }}
+              >
+                {c.name} · {c.issuer}
+              </span>
+            )
+          )}
         </div>
       </section>
 
       {/* Contact */}
-      <section id="contact" className="mx-auto max-w-5xl px-6 py-16 text-center">
-        <h2 className="mb-1 text-2xl font-bold text-white">Contact</h2>
-        <div className="mx-auto mb-6 h-1 w-14 rounded" style={{ background: blue1 }} />
-        <a href={`mailto:${person.email}`} className="rounded-full px-6 py-2.5 text-sm font-medium text-white" style={{ background: blue1 }}>
+      <section id="contact" className="mx-auto max-w-5xl px-6 py-16">
+        <h2 className="mb-1 text-2xl font-bold text-white">Contact Me</h2>
+        <div className="mb-8 h-1 w-14 rounded" style={{ background: blue1 }} />
+
+        <div className="grid gap-10 md:grid-cols-[220px_1fr]">
+          <div className="flex flex-row flex-wrap gap-3 md:flex-col">
+            {socials
+              .filter((s) => s.icon !== "mail")
+              .map((s) => (
+                <a
+                  key={s.label}
+                  href={s.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-2 rounded-lg px-3 py-2 text-sm"
+                  style={{ background: card, color: blue2 }}
+                >
+                  <SocialIcon icon={s.icon} size={16} /> {s.label}
+                </a>
+              ))}
+          </div>
+
+          {/* Decorative only, same as the original — it never sent anywhere,
+              just cleared its own inputs on submit. mailto below is the
+              actual way to reach out. */}
+          <form className="flex flex-col gap-3">
+            <input
+              type="text"
+              placeholder="Your Name"
+              className="rounded-lg px-4 py-2.5 text-sm text-white placeholder-white/40 outline-none"
+              style={{ background: card }}
+            />
+            <input
+              type="email"
+              placeholder="Email"
+              className="rounded-lg px-4 py-2.5 text-sm text-white placeholder-white/40 outline-none"
+              style={{ background: card }}
+            />
+            <input
+              type="text"
+              placeholder="Subject"
+              className="rounded-lg px-4 py-2.5 text-sm text-white placeholder-white/40 outline-none"
+              style={{ background: card }}
+            />
+            <textarea
+              placeholder="Message"
+              rows={5}
+              className="rounded-lg px-4 py-2.5 text-sm text-white placeholder-white/40 outline-none"
+              style={{ background: card }}
+            />
+            <button
+              type="button"
+              className="w-fit rounded-full px-6 py-2.5 text-sm font-medium text-white"
+              style={{ background: blue1 }}
+            >
+              Send
+            </button>
+          </form>
+        </div>
+
+        <a
+          href={`mailto:${person.email}`}
+          className="mt-8 inline-block rounded-full px-6 py-2.5 text-sm font-medium text-white"
+          style={{ background: blue1 }}
+        >
           {person.email}
         </a>
       </section>
