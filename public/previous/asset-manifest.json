@@ -1,0 +1,31 @@
+{
+  "files": {
+    "main.css": "/previous/static/css/main.2e303a7c.css",
+    "main.js": "/previous/static/js/main.41c63842.js",
+    "static/media/arctic.png": "/previous/static/media/arctic.0b16581988df8a541c7a.png",
+    "static/media/food-rest.png": "/previous/static/media/food-rest.8926413f82b8c6421124.png",
+    "static/media/python.png": "/previous/static/media/python.1ef874b1358626789fb9.png",
+    "static/media/react.png": "/previous/static/media/react.99af5ecc12248298a003.png",
+    "static/media/piggy.png": "/previous/static/media/piggy.b0b718e0f0241845635f.png",
+    "static/media/peersapp.png": "/previous/static/media/peersapp.88e458a55178d5f78ad6.png",
+    "static/media/shortner.png": "/previous/static/media/shortner.a90ecfd95512730a2f91.png",
+    "static/media/quiz.png": "/previous/static/media/quiz.41c3b52ad6e6a2de6e1d.png",
+    "static/media/myportfolio.png": "/previous/static/media/myportfolio.f0c26ac20d434db3c0cd.png",
+    "static/media/url-api.png": "/previous/static/media/url-api.7e4633b627e8eb58759d.png",
+    "static/media/cyber.png": "/previous/static/media/cyber.b61675d718857cabbb3f.png",
+    "static/media/portfolio.jpg": "/previous/static/media/portfolio.3a5d062dbf1a7cb54cb1.jpg",
+    "static/media/store-api.png": "/previous/static/media/store-api.69eaf2d57c371f64cbe9.png",
+    "static/media/budget.png": "/previous/static/media/budget.7af5160f9d7cd1cf540f.png",
+    "static/media/ABDULLAH__JAMIU'S CV.pdf": "/previous/static/media/ABDULLAH__JAMIU'S CV.aae0612afdbb2ed0bde6.pdf",
+    "static/media/dj-url.png": "/previous/static/media/dj-url.44497857cabb1a203c0f.png",
+    "static/media/tictactoe.png": "/previous/static/media/tictactoe.a2ff804c55619cb510ce.png",
+    "static/media/whatsapp.png": "/previous/static/media/whatsapp.0bdc1041e97598ee1a04.png",
+    "index.html": "/previous/index.html",
+    "main.2e303a7c.css.map": "/previous/static/css/main.2e303a7c.css.map",
+    "main.41c63842.js.map": "/previous/static/js/main.41c63842.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2e303a7c.css",
+    "static/js/main.41c63842.js"
+  ]
+}

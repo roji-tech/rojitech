@@ -1,0 +1,1 @@
+{"version":3,"file":"static/css/main.2e303a7c.css","mappings":"AAAA,aACG,+BACH,CACA,YACE,gCACF","sources":["EXTRAS/UnderStroke/understroke.css"],"sourcesContent":[".strokelight {\n   background-color: var(--bg-dark);\n}\n.strokedark {\n  background-color: var(--bg-light);\n}\n"],"names":[],"sourceRoot":""}
